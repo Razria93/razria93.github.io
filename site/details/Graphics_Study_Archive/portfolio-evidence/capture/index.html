@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>자동 촬영 도구의 오류 창 정리 검증</title>
+
+<style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#edf1f5;color:#172d40;font:16px/1.75 "Malgun Gothic",sans-serif}header{padding:60px max(calc((100vw - 1120px)/2),28px) 42px;background:#102333;color:#f4f8fb}.eyebrow{font-size:13px;letter-spacing:2px;color:#85dcd4}h1{font-size:38px;line-height:1.35;margin:14px 0}h2{font-size:27px;line-height:1.4;margin:10px 0 18px}h3{font-size:21px}.lead{font-size:24px;font-weight:bold;color:#82e6ba}nav{max-width:1120px;margin:22px auto;display:flex;gap:12px;flex-wrap:wrap}nav a{padding:7px 14px;background:white;border-radius:8px;text-decoration:none}a{color:#075e98;overflow-wrap:anywhere}section,.notice{max-width:1120px;margin:24px auto;padding:30px;background:white;border-radius:12px;border:1px solid #dce4eb}.notice{background:#fff7e7;border-color:#ecd7a6}p{margin:12px 0}code{background:#edf3f7;border-radius:4px;padding:2px 5px;font-size:14px;word-break:break-all}.tag{background:#ddf6e9;color:#176d4a;font-weight:bold;font-size:13px;padding:4px 10px;border-radius:4px}video{width:100%;max-height:690px;margin:16px 0;background:#101923;border-radius:6px}.caption,.small,figcaption{font-size:13px;color:#5d7284}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}figure{margin:12px 0}img{width:100%;border-radius:5px}table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}th,td{border-bottom:1px solid #dbe4eb;padding:10px;text-align:left;vertical-align:top}th{background:#edf4f8}.tablewrap{overflow-x:auto}summary{cursor:pointer;font-weight:bold;padding:12px;background:#edf3f7;border-radius:5px}details{margin:18px 0}li{margin:8px 0}footer{max-width:1120px;margin:30px auto 60px;color:#61768a;font-size:13px}@media(max-width:800px){section,.notice,nav{margin:18px 12px}section{padding:20px}.gallery{grid-template-columns:1fr}h1{font-size:29px}h2{font-size:23px}}
+
+.tag.failed{background:#fbe5e5;color:#9d2828}.tag.partial,.tag.unverified{background:#fff0d2;color:#805100}.tag.observed{background:#e4edf9;color:#28598c}p,li,figcaption{overflow-wrap:anywhere}.skip{position:absolute;left:12px;top:-100px;background:white;padding:8px}.skip:focus{top:8px}a:focus-visible,summary:focus-visible,video:focus-visible{outline:3px solid #138b88;outline-offset:3px}@media print{body{background:white}section{break-inside:avoid;border:1px solid #aaa}nav,video,.skip{display:none}header{background:white;color:#172d40}.eyebrow,.lead{color:#172d40}}
+
+
+
+main{min-width:0}header>p{max-width:1120px}header .lead{font-size:21px}h2{color:#172d40}pre{margin:16px 0;padding:18px 20px;background:#edf3f7;border-radius:6px;font:14px/1.7 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;overflow-x:auto}pre code{padding:0}video{display:block;height:auto}img{display:block;height:auto}.gallery:has(>figure:only-child){grid-template-columns:1fr}.note{padding:18px 20px;background:#fff7e7;border:1px solid #ecd7a6;border-radius:8px}.tablewrap{max-width:100%}.tablewrap table{min-width:600px}th{font-weight:700}td a{white-space:normal}header h1{color:#f4f8fb}header p{color:#d9e5ec}header .lead{color:#82e6ba}header .eyebrow{color:#85dcd4}section>:first-child{margin-top:0}section>:last-child{margin-bottom:0}section h2:not(:first-child){margin-top:12px}footer{padding:0 12px}nav a{line-height:1.6}
+
+@media(max-width:800px){header{padding:36px 20px 28px}header .lead{font-size:18px}section,.notice{padding:20px}pre{padding:14px;font-size:13px}footer{margin:24px 12px 40px}video{margin:14px 0}h1{overflow-wrap:anywhere}}
+
+</style><style class="shared-role-style">
+
+/* Shared typography by content role; content order and evidence remain unchanged. */
+
+header{padding-top:44px;padding-bottom:36px}
+
+header .report-title{font:700 38px/1.35 "Malgun Gothic",sans-serif;color:#f4f8fb;margin:12px 0 18px;letter-spacing:0}
+
+header .report-intro,header .report-intro.lead{font:400 18px/1.8 "Malgun Gothic",sans-serif;color:#d9e5ec;margin:0 0 14px;letter-spacing:0}
+
+header .report-meta,header .report-meta.eyebrow{font:400 13px/1.75 "Malgun Gothic",sans-serif;color:#85dcd4;letter-spacing:.2px}
+
+header p.report-meta{margin:14px 0 0}
+
+header .report-intro>.report-meta{display:block;margin:0 0 10px}
+
+section .section-title{font:700 27px/1.4 "Malgun Gothic",sans-serif;color:#172d40;margin:0 0 18px;letter-spacing:0}
+
+section .tag+.section-title{margin-top:12px}
+
+section .body-copy{font:400 16px/1.8 "Malgun Gothic",sans-serif;color:#172d40;margin:12px 0}
+
+section .body-label{font:700 15px/1.8 "Malgun Gothic",sans-serif;color:#075e73}
+
+section .evidence-link{font:400 14px/1.7 "Malgun Gothic",sans-serif;color:#075e98;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+
+section .evidence-links{margin:16px 0 0;line-height:1.9}
+
+section .caption,section .small,section figcaption{font:400 13px/1.75 "Malgun Gothic",sans-serif;color:#5d7284}
+
+@media(max-width:800px){header{padding-top:32px;padding-bottom:28px}header .report-title{font-size:29px}header .report-intro,header .report-intro.lead{font-size:17px}section .section-title{font-size:23px}}
+
+</style><style class="shared-layout-style">
+
+/* Common header and section navigation, shared by both verification reports. */
+
+header{padding:40px max(calc((100% - 1120px)/2),28px) 32px}
+
+header .report-meta.eyebrow{display:block;margin:0;line-height:23px}
+
+header .report-title{margin:14px 0 18px;word-break:keep-all;overflow-wrap:break-word}
+
+header .report-intro{margin:0;line-height:1.8;word-break:keep-all}
+
+header .verification-conditions{display:grid;grid-template-columns:72px 1fr;gap:4px 16px;margin:20px 0 0;padding-top:16px;border-top:1px solid #344957;font-size:13px;line-height:1.75;color:#d9e5ec}
+
+.verification-conditions dt{color:#85dcd4;font-weight:700}.verification-conditions dd{margin:0;word-break:keep-all}
+
+nav.report-index{max-width:1120px;margin:24px auto;display:block}
+
+.report-index h2{font-size:14px;line-height:24px;margin:0 0 10px;color:#5d7284}
+
+.index-items{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+
+.index-items a{display:flex;align-items:center;gap:10px;min-height:44px;padding:10px 14px;border:1px solid #dce4eb;border-radius:8px;font-size:14px;line-height:1.6;word-break:keep-all}
+
+.index-items a span{color:#138b88;font-size:12px;font-weight:bold;flex:none}
+
+.notice{font-size:14px;line-height:1.8;padding:20px 24px;margin:24px auto}
+
+[id]{scroll-margin-top:20px}
+
+@media(max-width:800px){header{padding:30px 20px 28px}header .report-title{font-size:29px}header .report-intro{font-size:17px}.index-items{grid-template-columns:repeat(2,minmax(0,1fr))}nav.report-index{margin:20px 12px}.notice{margin:20px 12px;padding:18px 20px}header .verification-conditions{grid-template-columns:64px 1fr;gap:6px 10px}}
+
+</style><style class="body-word-wrap">
+
+/* Korean prose wraps at word boundaries; only code and literal URLs may split. */
+
+main, main p, main li, main figcaption, main a, main th, main td,
+
+main h2, main h3, main summary, footer, footer p, footer a {
+
+  word-break:keep-all; overflow-wrap:normal;
+
+}
+
+main pre, main code, main kbd, main samp, main .literal-url,
+
+footer code, footer .literal-url {
+
+  word-break:normal; overflow-wrap:anywhere;
+
+}
+
+</style><link rel="stylesheet" href="../../../../evidence/Graphics_Study_Archive/portfolio-navigation.css" data-navigation-update="20261023"><link rel="stylesheet" href="../../../../assets/document.css"><link rel="stylesheet" href="../../../../assets/site.css"><link rel="stylesheet" href="../../../../assets/detail.css"></head><body class="portfolio detail"><div class="topbar"><nav aria-label="프로젝트 이동"><a class="brand" href="../../../../index.html">전체 포트폴리오</a><div class="project-nav"><a href="../../../../stellar.html">스텔라</a><a href="../../../../plugin.html">플러그인</a><a href="../../../../graphics.html" class="current">그래픽스</a></div></nav></div><div class="detail-trail"><a href="../../../../graphics.html">Graphics Study Archive 안내로 돌아가기</a><span>상세 문서·근거 자료</span></div><header data-source-block="original-0"><span class="eyebrow report-meta">Graphics Study Archive · 검증일 2026.10.19</span><h1 class="report-title report-title">자동 촬영 도구의 오류 창 정리 검증</h1><p class="report-intro">순차 오류 창이 남는 상황을 재현하고, 기존 정리 코드의 동작을 확인했습니다.<br>정리 성공과 실패 보고를 구분해 5개 조건에서 검증했습니다.</p><dl class="verification-conditions"><dt>검증 조건</dt><dd>원본 정리 스크립트 · 합성 테스트 창 · 최대 정리 5회 · 안정 대기 3초</dd><dt>검증 구성</dt><dd>5개 조건 × 3회 = 총 15회 · 별도 기존 회귀 테스트 기록</dd></dl></header><nav class="report-index" aria-label="문서 색인"><h2>이 페이지에서 보기</h2><div class="index-items"><a href="index.html#video">비교 재현 시연</a><a href="index.html#target">대상과 범위</a><a href="index.html#results">조건과 판정 결과</a><a href="index.html#limits">확인한 한계</a><a href="index.html#prior">기존 회귀 테스트</a><a href="index.html#video-role">영상의 역할</a><a href="index.html#public-scope">공개 자료 범위</a></div></nav><nav class="detail-links" aria-label="포트폴리오 이동" data-navigation-update="20261023"><a href="../../../../../files/pdf/graphics-review.pdf#page=6" target="_blank" rel="noopener noreferrer">PDF 6쪽 · 문제 ↗</a><a href="../../../../../files/pdf/graphics-review.pdf#page=7" target="_blank" rel="noopener noreferrer">PDF 7쪽 · 해결 ↗</a><a href="../../../../../files/pdf/graphics-review.pdf#page=8" target="_blank" rel="noopener noreferrer">PDF 8쪽 · 검증 ↗</a><a href="../index.html">전체 자료 안내</a></nav><main data-source-block="original-1"><div class="notice">기존 정리 코드에 합성 테스트 창을 적용한 현재 검증입니다. 역사적 사건 당시의 실행 기록으로 소급하지 않습니다.</div><section id="video"><h2 class="section-title">오류 창 정리 전·후 비교 재현 시연</h2><p class="body-copy">기본 Windows 창과 MessageBox로 현상과 대응 순서를 재현한 영상이다. 실제 DLL 오류나 원본 정리 스크립트의 실행 영상이 아니며, 기능 검증 근거는 아래 테스트 로그와 창 상태이다.</p><video controls playsinline preload="metadata" aria-label="오류 창 정리 전후 비교 재현 시연"><source src="../../../../evidence/Graphics_Study_Archive/portfolio-evidence/media/capture-comparison.mp4" type="video/mp4"></source></video><p class="body-copy evidence-links"><a href="index.html#results" class="evidence-link">15회 검증 결과로 이동</a> · <a href="../index.html" class="evidence-link">근거자료 목록</a></p><nav class="return-links" aria-label="관련 자료 이동" data-navigation-update="20261023"><a href="../../../../../files/pdf/graphics-review.pdf#page=6" target="_blank" rel="noopener noreferrer">PDF 6쪽 · 문제 ↗</a><a href="../../../../../files/pdf/graphics-review.pdf#page=7" target="_blank" rel="noopener noreferrer">PDF 7쪽 · 해결 ↗</a><a href="index.html#results">검증 결과 확인</a></nav></section><section id="target"><h2 class="section-title">대상과 범위</h2><p class="body-copy">commit <code>4ae56f4d37fc0ad019021a80e705e77f546ebb2b</code>의 원본 정리 스크립트를 변경 없이 실행했습니다. 호출용 래퍼와 테스트 창은 이번 검증을 위해 Codex가 작성했습니다. 본인은 검증 방향과 조건을 검토하고 실행을 요청했습니다.</p>
+
+<p class="body-copy evidence-links"><a href="https://github.com/Razria93/Graphics_Study_Archive/blob/4ae56f4d37fc0ad019021a80e705e77f546ebb2b/Docs/98_Tools/scripts/clear-example-error-windows.ps1" class="evidence-link" target="_blank" rel="noopener noreferrer">원본 정리 코드</a> · <a href="https://github.com/Razria93/Graphics_Study_Archive/blob/4ae56f4d37fc0ad019021a80e705e77f546ebb2b/Docs/98_Tools/scripts/example-error-window-utils.ps1" class="evidence-link" target="_blank" rel="noopener noreferrer">원본 후보 조회·종료 코드</a> · <a href="../../../../evidence/Graphics_Study_Archive/portfolio-evidence/capture/results.json" class="evidence-link">15회 판정 필드 JSON</a></p>
+
+<pre>TargetProcessName = ArchiveCaseFixture
+
+Pattern = ArchiveCaseError (정규식이 아닌 문자열 검색)
+
+MaxDrainPasses = 5
+
+QuietSeconds = 3
+
+각 조건 3회, 총 15회</pre>
+
+</section><section><h2 id="results" class="section-title">조건과 판정 기준</h2><ol>
+
+<li>정상 상태: 오류 없이 일반 창만 표시. 코드 0이며 일반 창이 유지돼야 함.</li>
+
+<li>순차 오류: 기본 MessageBox A를 닫아야 B를 호출. 코드 0, 후속 창 판정, 오류 잔존 0개를 확인.</li>
+
+<li>지연 오류: A 종료 후 원본의 <code>Outcome: Quiet</code> 출력을 관찰한 시점에 신호를 보내고, 0.5초 뒤 B 표시. 안정 대기 뒤 코드 3과 B 잔존을 보고해야 함. 재현 타이밍을 맞추는 신호는 테스트 장치에만 적용.</li>
+
+<li>종료 거부: 테스트 Form의 FormClosing에서 종료 요청을 취소. 코드 3과 <code>StillPresent</code> 판정으로 중단해야 함.</li>
+
+<li>일반 창 동시 표시: 같은 프로세스에서 순차 오류와 일반 Form을 함께 표시. 오류만 정리하고 일반 창은 유지돼야 함.</li></ol>
+
+<p class="note body-copy">지연 오류·종료 거부의 통과는 실패를 정확히 보고했다는 뜻입니다. 자동 복구 성공으로 세지 않습니다. 정리 도구는 종료 코드를 반환하며, 실제 호출자가 그 코드를 무시하면 다음 실행 차단을 보장하지 못합니다.</p>
+
+<div class="tablewrap"><table><thead><tr><th>조건</th><th>반복</th><th>종료 코드</th><th>오류 잔존</th><th>일반 창 유지</th><th>판정</th><th>근거</th></tr></thead><tbody><tr><td>오류 없는 정상 상태</td><td>1</td><td>0</td><td>0</td><td>1</td><td>기대 동작 충족</td><td><a href="results.html#normal-1" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>A 종료 후 B 표시</td><td>1</td><td>0</td><td>0</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#chain-1" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>안정 대기 중 B 표시</td><td>1</td><td>3</td><td>1</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#delayed-1" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>종료 요청을 거부하는 창</td><td>1</td><td>3</td><td>1</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#refuse-1" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>오류 창과 일반 창 동시 표시</td><td>1</td><td>0</td><td>0</td><td>1</td><td>기대 동작 충족</td><td><a href="results.html#mixed-1" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>오류 없는 정상 상태</td><td>2</td><td>0</td><td>0</td><td>1</td><td>기대 동작 충족</td><td><a href="results.html#normal-2" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>A 종료 후 B 표시</td><td>2</td><td>0</td><td>0</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#chain-2" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>안정 대기 중 B 표시</td><td>2</td><td>3</td><td>1</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#delayed-2" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>종료 요청을 거부하는 창</td><td>2</td><td>3</td><td>1</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#refuse-2" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>오류 창과 일반 창 동시 표시</td><td>2</td><td>0</td><td>0</td><td>1</td><td>기대 동작 충족</td><td><a href="results.html#mixed-2" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>오류 없는 정상 상태</td><td>3</td><td>0</td><td>0</td><td>1</td><td>기대 동작 충족</td><td><a href="results.html#normal-3" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>A 종료 후 B 표시</td><td>3</td><td>0</td><td>0</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#chain-3" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>안정 대기 중 B 표시</td><td>3</td><td>3</td><td>1</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#delayed-3" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>종료 요청을 거부하는 창</td><td>3</td><td>3</td><td>1</td><td>0</td><td>기대 동작 충족</td><td><a href="results.html#refuse-3" class="evidence-link">실행 결과 발췌</a></td></tr><tr><td>오류 창과 일반 창 동시 표시</td><td>3</td><td>0</td><td>0</td><td>1</td><td>기대 동작 충족</td><td><a href="results.html#mixed-3" class="evidence-link">실행 결과 발췌</a></td></tr></tbody></table>
+
+</div><nav class="return-links" aria-label="관련 자료 이동" data-navigation-update="20261023"><a href="../../../../../files/pdf/graphics-review.pdf#page=8" target="_blank" rel="noopener noreferrer">PDF 8쪽 · 검증 ↗</a><a href="results.html">실행 결과 발췌</a></nav></section><section id="limits"><h2 class="section-title">확인한 한계</h2><ul>
+
+<li>안정 대기 중 나타난 B는 감지하고 실패로 종료하지만, 그 시점에 다시 정리하는 자동 재시도는 하지 않습니다.</li>
+
+<li>설정한 관찰 시간이 끝난 뒤 더 늦게 생기는 오류까지 보장하지 않습니다. 초기 조회에 오류가 없으면 원본 정리 도구는 바로 코드 0을 반환합니다.</li>
+
+<li>일반 창 유지 검증은 지정한 테스트 프로세스의 일반 Form에 대한 결과입니다. 동일 프로세스의 모든 시스템 대화상자를 구분해 보호했다는 뜻이 아닙니다. 원본 후보 조건에는 기본 대화상자 클래스 #32770도 포함됩니다.</li>
+
+<li>실제 DLL 로딩 실패, Clean/Rebuild, 원래 그래픽스 예제 및 촬영 재개는 이번 검증 범위에 포함하지 않았습니다.</li>
+
+<li>각 조건 3회는 반복 동작 확인이며 환경 전체에 대한 안정성 통계는 아닙니다.</li></ul>
+
+</section><section><h2 id="prior" class="section-title">별도 기존 회귀 테스트 기록</h2><p class="body-copy">원본 테스트는 두 동시 오류 창을 정리한 뒤의 외부 5초 대기 검사에서 실패했습니다. 순차 오류 단계까지 도달하지 못했습니다. 성공 조건의 시간 제한만 5초에서 15초로 바꾼 별도 사본은 통과했습니다. 조용한 상태의 필요 시간과 검증 조건은 유지했습니다. 원본 테스트 전체 통과로 표현하지 않습니다.</p>
+
+<p class="body-copy">시간 제한 실패의 원인은 계측으로 확정하지 못했습니다. 새 PowerShell 조회 프로세스의 비용이 관련될 수 있지만 확인된 원인으로 단정하지 않습니다. 이 결과는 위의 15회와 별도입니다.</p>
+
+<p class="body-copy evidence-links"><a href="results.html#prior" class="evidence-link">5초/15초 결과 발췌</a></p><nav class="return-links" aria-label="관련 자료 이동" data-navigation-update="20261023"><a href="../../../../../files/pdf/graphics-review.pdf#page=8" target="_blank" rel="noopener noreferrer">PDF 8쪽 · 검증 ↗</a><a href="results.html#prior">대기 한도 결과 발췌</a></nav></section><section id="video-role"><h2 class="section-title">영상의 역할</h2><p class="body-copy evidence-links"><a href="../../../../evidence/Graphics_Study_Archive/portfolio-evidence/media/capture-comparison.mp4" class="evidence-link">개선 전·후 비교 재현 영상</a>은 현상과 절차를 설명합니다. 기본 Windows 창과 MessageBox를 사용하지만 시연용 프로그램이며, 실제 DLL 오류나 위 원본 정리 스크립트를 실행한 영상은 아닙니다. 검증 근거는 위 실행 로그와 창 상태입니다.</p>
+
+</section><section id="public-scope"><h2 class="section-title">공개 자료 범위</h2><p class="body-copy">비교 영상과 검증 결과 및 필요한 판정 필드를 공개한다. 원본 로그·호출 스크립트·압축 자료는 로컬 검증 자료로 보존한다.</p>
+
+</section></main><footer id="portfolio-navigation"><p><a href="https://github.com/Razria93/Graphics_Study_Archive/blob/main/PORTFOLIO.md" target="_blank" rel="noopener noreferrer">포트폴리오 안내·주제별 근거</a> · <a href="../../../../../files/pdf/graphics-review.pdf" target="_blank" rel="noopener noreferrer">포트폴리오 PDF · 25쪽</a> · <a href="https://github.com/Razria93/Graphics_Study_Archive" target="_blank" rel="noopener noreferrer">저장소 메인</a></p></footer><div class="portfolio-bottom" data-navigation-update="20261023"><nav class="return-links" aria-label="관련 자료 이동" data-navigation-update="20261023"><a href="../../../../../files/pdf/graphics-review.pdf#page=6" target="_blank" rel="noopener noreferrer">PDF 6쪽 · 문제 ↗</a><a href="../../../../../files/pdf/graphics-review.pdf#page=7" target="_blank" rel="noopener noreferrer">PDF 7쪽 · 해결 ↗</a><a href="../../../../../files/pdf/graphics-review.pdf#page=8" target="_blank" rel="noopener noreferrer">PDF 8쪽 · 검증 ↗</a><a href="../index.html">전체 자료 안내</a></nav></div><footer class="review-footer"><a href="../../../../graphics.html">Graphics Study Archive 안내로 돌아가기</a><p>관련 PPT·PDF·검증 문서를 함께 제공합니다. GitHub·일부 영상·기존 공개 페이지는 외부 자료로 연결됩니다.</p><a href="https://razria93.github.io/Graphics_Study_Archive/portfolio-evidence/capture/index.html" target="_blank" rel="noopener noreferrer">기존 공개 페이지 ↗</a></footer></body></html>

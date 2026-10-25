@@ -1,0 +1,53 @@
+/* Local review v1. Common document style 1.0.0 is the base. */
+.portfolio .topbar{background:#102333;border-bottom:1px solid #344957;color:#e2edf3}
+.portfolio .topbar nav{max-width:1120px;margin:0 auto;padding:14px 0;display:flex;gap:20px;align-items:center}
+.portfolio .topbar a{background:transparent;padding:3px 0;color:#bed1db;font-size:14px;border-radius:0}
+.portfolio .topbar .brand{font-weight:700;color:#85dcd4}
+.portfolio .topbar a.current{color:white;text-decoration:underline;text-underline-offset:6px}
+.project-nav{display:flex;gap:20px;flex-wrap:wrap}
+.preview-label{font-size:12px;color:#bed1db;margin-left:auto;white-space:nowrap}
+.portfolio header .report-intro{max-width:950px}
+.portfolio .report-index a{justify-content:flex-start}
+.portfolio .project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.project-card{border:1px solid #dce4eb;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.project-card>img{width:100%;aspect-ratio:16/9;object-fit:contain;background:#edf1f5;border-radius:0}
+.project-card-content{padding:22px;display:flex;flex-direction:column;flex:1;min-width:0}
+.portfolio .project-card .eyebrow{color:#075e73;letter-spacing:0;font-size:13px;margin:0 0 10px}
+.project-card h3{font-size:21px;line-height:1.45;margin:0 0 12px;overflow-wrap:normal}
+.project-card p{font-size:15px;margin:0 0 14px}
+.project-card .highlights{font-size:13px;color:#5d7284;border-top:1px solid #dce4eb;padding-top:14px}
+.card-actions{margin-top:auto;display:flex;align-items:flex-start;flex-direction:column;gap:14px;padding-top:8px;font-size:14px}
+.portfolio .button{display:inline-flex;align-items:center;gap:7px;border:1px solid #b8cbd8;background:#fff;border-radius:7px;padding:10px 15px;color:#075e98;text-decoration:none;font-size:15px;line-height:1.6}
+.portfolio .button.primary{background:#075e89;border-color:#075e89;color:white;font-weight:700}
+.portfolio a:hover{text-decoration:underline;text-underline-offset:4px}
+.portfolio .button:hover{background:#eaf3f8}.portfolio .button.primary:hover{background:#064b6e}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 10px}
+.overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.overview-grid p:first-child{margin-top:0}
+.overview-grid figure{margin:0}.overview-grid img{width:100%;height:auto}
+.overview-grid figcaption{margin-top:10px}
+.facts{display:grid;grid-template-columns:70px 1fr;gap:8px 12px;margin:18px 0;font-size:14px}
+.facts dt{color:#5d7284}.facts dd{margin:0}
+.feature-title{font-weight:700;margin:24px 0 6px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:28px}.roles h3{font-size:18px;margin:0;color:#138b88}.roles>div+div h3{color:#b95a19}
+.scope-note{font-size:14px;color:#5d7284;border-top:1px solid #dce4eb;padding-top:16px;margin-top:22px}
+.case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.case-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.case{padding:22px;border:1px solid #dce4eb;border-radius:9px;display:flex;flex-direction:column;min-width:0}
+.case h3{font-size:20px;margin:0 0 8px;line-height:1.45}.case p{margin:8px 0;font-size:15px}
+.case .case-result{font-weight:700;color:#075e73;padding:12px 0;border-top:1px solid #e3eaef;border-bottom:1px solid #e3eaef}
+.case .case-scope{font-size:14px;color:#5d7284}
+.case-links{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:auto;padding-top:14px;font-size:14px}
+.case-grid .case-links{flex-direction:column;align-items:flex-start}
+.group-title{font-size:20px;color:#075e73;margin:26px 0 16px}.group-title:first-of-type{margin-top:0}
+.resource-list article{padding:20px 0;border-bottom:1px solid #dce4eb}.resource-list article:first-child{padding-top:0}.resource-list article:last-child{border:0;padding-bottom:0}
+.resource-list h3{font-size:18px;margin:0 0 6px}.resource-list p{margin:0;color:#5d7284}.resource-list .case-links{padding-top:10px}
+.reading-paths{display:flex;gap:14px 28px;flex-wrap:wrap;border-top:1px solid #dce4eb;margin-top:24px;padding-top:18px}
+.portfolio footer nav{margin:0 0 20px;gap:20px;padding:0}.portfolio footer nav a{background:transparent;padding:0;font-size:14px}
+.portfolio footer p{margin:8px 0}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.portfolio p,.portfolio h1,.portfolio h2,.portfolio h3,.portfolio a,.portfolio li,.portfolio dd{word-break:keep-all;overflow-wrap:normal}
+.portfolio [id]{scroll-margin-top:24px}
+@media(max-width:1180px){.portfolio .topbar nav{padding:14px 28px}}
+@media(max-width:1000px){.portfolio .project-grid,.case-grid{grid-template-columns:1fr}.project-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr)}.project-card>img{height:100%;object-fit:contain}.card-actions{flex-direction:row;flex-wrap:wrap;align-items:center}.case-grid .case-links{flex-direction:row}}
+@media(max-width:800px){.portfolio .topbar nav{padding:12px 20px;gap:10px 18px;flex-wrap:wrap}.project-nav{gap:18px}.preview-label{margin-left:0}.overview-grid,.roles,.case-grid.two{grid-template-columns:1fr;gap:22px}.project-card{display:flex}.project-card>img{height:auto}.project-card-content,.case{padding:20px}.portfolio .project-grid{gap:18px}.portfolio footer nav{margin:0 0 18px}.facts{grid-template-columns:60px 1fr}.portfolio header .report-meta{font-size:12px}.reading-paths{gap:12px 20px}}
+@media print{.topbar,.preview-label,.skip{display:none}.portfolio .project-grid,.case-grid{grid-template-columns:1fr}.project-card{break-inside:avoid}.portfolio .button{color:#172d40!important;background:white!important}.portfolio footer nav{display:none}}

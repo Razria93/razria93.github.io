@@ -1,0 +1,46 @@
+/* Shared detail-page layout. Original evidence and project-specific diagrams remain. */
+html{scroll-behavior:auto}
+.portfolio.detail{margin:0;background:#edf1f5;color:#172d40;font:16px/1.8 "Malgun Gothic",sans-serif;padding:0}
+.portfolio.detail .topbar{position:static;top:auto;margin:0}
+.portfolio.detail .topbar nav{margin:0 auto;position:static;max-width:1120px;padding:14px 0;display:flex;gap:20px;background:transparent;border:0;box-shadow:none}
+.portfolio.detail .detail-trail{max-width:1120px;margin:0 auto;padding:14px 0;display:flex;gap:12px 24px;flex-wrap:wrap;font-size:13px;color:#5d7284}
+.portfolio.detail>header{max-width:none;margin:0;padding:40px max(calc((100% - 1120px)/2),28px) 32px;border:0;border-radius:0;background:#102333;color:#f4f8fb;position:static}
+.portfolio.detail>header h1{font-size:38px;line-height:1.35;margin:14px 0 18px;color:#f4f8fb;word-break:keep-all;overflow-wrap:normal}
+.portfolio.detail>header p{max-width:1120px}
+.portfolio.detail>header .report-meta,.portfolio.detail>header .eyebrow{font-size:13px;line-height:1.8;color:#85dcd4;margin:0 0 10px;letter-spacing:.2px}
+.portfolio.detail>header .report-intro,.portfolio.detail>header .lead{font-size:18px;font-weight:400;line-height:1.8;color:#d9e5ec;margin:0 0 14px}
+.portfolio.detail>header a{color:#b3e2ec}
+.portfolio.detail>header .small{color:#bed1db}
+.portfolio.detail>header .note{color:#172d40}
+.portfolio.detail>main{width:auto;max-width:1120px;margin:0 auto;padding:0;background:transparent;border:0;border-radius:0;min-width:0}
+.portfolio.detail>section,.portfolio.detail>main>section,.portfolio.detail>main>.card{width:auto;max-width:1120px;margin:24px auto;padding:30px;background:#fff;border:1px solid #dce4eb;border-radius:12px;min-width:0}
+.portfolio.detail h2,.portfolio.detail .section-title{font-size:27px;line-height:1.4;margin:0 0 18px;color:#172d40}
+.portfolio.detail h3{font-size:21px;line-height:1.5}
+.portfolio.detail p,.portfolio.detail li,.portfolio.detail td,.portfolio.detail th,.portfolio.detail dd,.portfolio.detail a,.portfolio.detail figcaption{word-break:keep-all;overflow-wrap:normal}
+.portfolio.detail [id]{scroll-margin-top:24px}
+.portfolio.detail>.report-index{display:block;position:static;top:auto;max-width:1120px;margin:24px auto;padding:0;border:0;background:transparent;box-shadow:none}
+.portfolio.detail>.report-index h2{font-size:14px;margin:0 0 10px;color:#5d7284;font-weight:400}
+.portfolio.detail .index-items{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.portfolio.detail .index-items a{display:block;background:white;padding:10px 12px;font-size:14px;border-radius:6px;line-height:1.65}
+.portfolio.detail>.detail-links{position:static;top:auto;max-width:1120px;margin:20px auto;display:flex;flex-wrap:wrap;gap:10px 16px;padding:0;background:transparent;box-shadow:none;border:0}
+.portfolio.detail>.detail-links a{padding:7px 12px;font-size:14px;line-height:1.7;background:white;border-radius:6px}
+.portfolio.detail .tablewrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;min-width:0}
+.portfolio.detail table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.8;margin:16px 0}
+.portfolio.detail th,.portfolio.detail td{padding:12px;vertical-align:top;border-bottom:1px solid #dce4eb}
+.portfolio.detail th{background:#edf4f8}
+.portfolio.detail pre{max-width:100%;overflow:auto;white-space:pre-wrap;font:14px/1.7 Consolas,monospace;padding:18px 20px;border-radius:6px;background:#edf3f7}
+.portfolio.detail code,.portfolio.detail pre,.portfolio.detail kbd,.portfolio.detail samp,.portfolio.detail .literal-url{word-break:normal;overflow-wrap:anywhere}
+.portfolio.detail pre code{padding:0;font-size:inherit}
+.portfolio.detail img,.portfolio.detail video{max-width:100%;height:auto;object-fit:contain}
+.portfolio.detail video{max-height:none;width:100%;background:#101923}
+.portfolio.detail .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.portfolio.detail .gallery>*{min-width:0}
+.portfolio.detail .gallery:has(>figure:only-child){grid-template-columns:1fr}
+.portfolio.detail .caption,.portfolio.detail figcaption,.portfolio.detail .small{font-size:13px;line-height:1.8;color:#5d7284}
+.portfolio.detail .actions,.portfolio.detail .return-links,.portfolio.detail .evidence-links{display:flex;flex-wrap:wrap;gap:10px 20px;max-width:100%;position:static}
+.portfolio.detail .actions a,.portfolio.detail .return-links a,.portfolio.detail .evidence-links a{font-size:14px}
+.portfolio.detail .portfolio-bottom{position:static;max-width:1120px;margin:24px auto;background:transparent;padding:0;box-shadow:none;border:0}
+.portfolio.detail footer{position:static;max-width:1120px;margin:24px auto;padding:0;background:transparent;border:0;font-size:13px;color:#5d7284}
+.portfolio.detail .review-footer{border-top:1px solid #dce4eb;padding:22px 0 32px}
+@media(max-width:1180px){.portfolio.detail .topbar nav,.portfolio.detail .detail-trail{padding-left:28px;padding-right:28px}.portfolio.detail>main,.portfolio.detail>section,.portfolio.detail>.report-index,.portfolio.detail>.detail-links,.portfolio.detail>footer,.portfolio.detail .portfolio-bottom{margin-left:28px;margin-right:28px}}
+@media(max-width:800px){.portfolio.detail .topbar nav{padding:12px 20px;gap:10px 18px}.portfolio.detail .detail-trail{padding:12px 20px}.portfolio.detail>header{padding:32px 20px 28px}.portfolio.detail>header h1{font-size:29px}.portfolio.detail>main,.portfolio.detail>section,.portfolio.detail>.report-index,.portfolio.detail>.detail-links,.portfolio.detail>footer,.portfolio.detail .portfolio-bottom{margin-left:12px;margin-right:12px}.portfolio.detail>section,.portfolio.detail>main>section,.portfolio.detail>main>.card{padding:20px;margin-top:18px;margin-bottom:18px}.portfolio.detail h2,.portfolio.detail .section-title{font-size:23px}.portfolio.detail .index-items{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio.detail .gallery{grid-template-columns:1fr}.portfolio.detail table{min-width:600px}.portfolio.detail h3{font-size:20px}.portfolio.detail pre{font-size:13px;padding:14px}}
