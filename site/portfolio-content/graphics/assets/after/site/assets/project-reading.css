@@ -1,0 +1,83 @@
+/* Compact resource links; only opted-in groups are styled. */
+.portfolio .resource-button-row{display:flex;flex-direction:row;flex-wrap:wrap;align-items:stretch;gap:6px;margin-top:20px}
+.portfolio .resource-button-row>a.resource-button,.portfolio .resource-button-row>a.resource-button:first-child{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px;border:1px solid #b8cbd8;border-radius:7px;background:#f2f7fa;color:#075e73;font-size:14px;font-weight:600;line-height:1.35;white-space:nowrap;text-decoration:none;max-width:none;box-sizing:border-box}
+.portfolio .resource-button-row>a.resource-button:hover{background:#e4f0f5;border-color:#5d8d9d;text-decoration:none}
+.portfolio .resource-button-row>a.resource-button:focus-visible{outline:3px solid #1976b9;outline-offset:3px}
+.portfolio.companion-reading #implementation .case,.portfolio.companion-reading #troubleshooting .case{display:flex;flex-direction:column;min-width:0}
+.portfolio.companion-reading #implementation .resource-button-row,.portfolio.companion-reading #troubleshooting .resource-button-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:8px;margin-top:auto;padding-top:20px}
+.portfolio.companion-reading #implementation .resource-button-row>a:first-child,.portfolio.companion-reading #troubleshooting .resource-button-row>a:first-child{grid-column:1 / -1}
+.portfolio.companion-reading .case .resource-button-row>a.resource-button{width:100%;min-width:0;max-width:100%;white-space:normal;word-break:keep-all;overflow-wrap:anywhere;text-align:center}
+@media(min-width:1051px){.portfolio.companion-reading #implementation .case-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1050px){.portfolio.companion-reading #implementation .case-grid.two{grid-template-columns:1fr}.portfolio.companion-reading #troubleshooting .case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:740px){.portfolio.companion-reading #troubleshooting .case-grid{grid-template-columns:1fr}}
+
+/* Catalog cards: previews are not links; only the explicit button opens a video. */
+.portfolio.companion-reading #overview>.section-title,.portfolio.companion-reading #roles>.section-title{padding-bottom:16px;border-bottom:1px solid #dce4eb;margin-bottom:24px}
+.portfolio.companion-reading #overview .overview-grid::after{content:"";grid-column:1 / -1;grid-row:2;align-self:start;height:1px;background:#dce4eb}
+.portfolio.companion-reading #overview .overview-grid>.portfolio-updated,.portfolio.companion-reading #overview .overview-grid figcaption{border-top:0;padding-top:11px}
+@media(max-width:800px){.portfolio.companion-reading #overview .overview-grid::after{display:none}.portfolio.companion-reading #overview .overview-grid>.portfolio-updated{border-top:1px solid #dce4eb}}
+
+.portfolio #overview .equal-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:10px}
+.portfolio #overview .equal-actions>a.button{width:100%;min-width:0;justify-content:center;text-align:center;white-space:normal;word-break:keep-all;background:#f2f7fa;margin:0;padding:10px 8px;font-weight:700}
+.portfolio #overview .equal-actions>a.button.primary{background:#075e89;border-color:#075e89;color:#fff}
+.portfolio #overview .equal-actions>a.button.primary:hover{background:#064b6e}
+.portfolio.companion-reading #featured-videos .featured-card{padding:24px;overflow:hidden}
+.portfolio.companion-reading .featured-poster{position:relative;margin:0;background:#102333}
+.portfolio.companion-reading .featured-poster img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;border-radius:5px;cursor:default}
+.portfolio.companion-reading .featured-poster figcaption{position:absolute;right:8px;bottom:8px;padding:2px 7px;border-radius:4px;background:rgba(10,24,36,.92);color:#fff;font-size:12px;line-height:1.6}
+.portfolio.companion-reading .featured-body{padding:0;display:flex;flex-direction:column;flex:1}
+.portfolio.companion-reading .featured-card h3{margin:0 0 16px;font-size:21px;line-height:1.5;word-break:keep-all}
+.portfolio.companion-reading .featured-body p{margin:16px 0 20px;line-height:1.75;word-break:keep-all}
+.portfolio.companion-reading .featured-body .button{margin-top:auto;justify-content:center;text-align:center;width:100%;min-height:44px;padding:8px;background:#f2f7fa;color:#075e73;border:1px solid #b8cbd8;border-radius:7px;font-size:14px;font-weight:600;line-height:1.35;white-space:normal;word-break:keep-all;text-decoration:none}
+.portfolio.companion-reading .featured-footer{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;margin-top:20px;padding-top:18px;border-top:1px solid #dce4eb}
+.portfolio.companion-reading .featured-footer p{margin:0;font-size:16px;color:#172d40}
+.portfolio.companion-reading .featured-footer .button{background:#f2f7fa;color:#075e73;font-size:14px;font-weight:600;min-height:44px;padding:8px;border-color:#b8cbd8}
+.portfolio.companion-reading #overview .overview-intro{margin:0;line-height:1.75;word-break:keep-all}
+.portfolio.companion-reading #overview .overview-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;align-items:stretch;row-gap:10px}
+.portfolio.companion-reading #overview .overview-summary{grid-column:1;grid-row:1;display:flex;flex-direction:column;min-width:0}
+.portfolio.companion-reading #overview .overview-facts{margin:16px 0;gap:12px 18px}
+.portfolio.companion-reading #overview .equal-actions{margin:auto 0 0}
+.portfolio.companion-reading #overview .overview-grid figure{display:contents}
+.portfolio.companion-reading #overview .overview-grid figure>a{grid-column:2;grid-row:1;align-self:end;display:block;justify-self:stretch;width:100%;margin-bottom:0}
+.portfolio.companion-reading #overview .overview-grid figure img{display:block;width:100%;height:auto;object-fit:contain}
+.portfolio.companion-reading #overview .overview-grid figcaption{grid-column:2;grid-row:2;margin:0;padding-top:10px;border-top:1px solid transparent;font-size:13px;line-height:1.75}
+.portfolio.companion-reading #overview .portfolio-updated{grid-column:1;grid-row:2;margin:0;padding-top:10px}
+.portfolio.companion-reading #implementation>.scope-note{border:0;margin:0 0 20px;padding:0}
+.portfolio.companion-reading .resource-button-row>a.video-button-lines{flex-direction:column;gap:0;line-height:1.35;min-height:56px}
+.portfolio.companion-reading .video-button-lines>.video-line{display:block;text-align:center}
+@media(max-width:800px){.portfolio.companion-reading #overview .overview-summary,.portfolio.companion-reading #overview .overview-grid figure>a,.portfolio.companion-reading #overview .overview-grid figcaption,.portfolio.companion-reading #overview .portfolio-updated{grid-column:auto;grid-row:auto}.portfolio.companion-reading #overview .overview-grid figure{display:block}.portfolio.companion-reading #overview .equal-actions{margin-top:0}.portfolio.companion-reading #featured-videos .featured-card{padding:20px}}
+@media(max-width:800px){.portfolio.companion-reading #overview .overview-grid{grid-template-columns:minmax(0,1fr)}.portfolio.companion-reading #overview .overview-grid figure>a{width:100%;margin-bottom:0}.portfolio.companion-reading #overview .overview-grid figcaption{padding-top:10px;border:0}}
+
+/* Overview footer spacing: space belongs above the divider. */
+.portfolio.companion-reading #overview .overview-grid{row-gap:22px}
+.portfolio.companion-reading #overview .overview-grid>.portfolio-updated,.portfolio.companion-reading #overview .overview-grid figcaption{padding-top:11px;padding-bottom:0}
+
+/* Companion pages: vary the number of cards and resources, not their visual hierarchy. */
+.portfolio.companion-reading .report-index .index-items{grid-template-columns:repeat(auto-fit,minmax(145px,1fr))}
+.portfolio.companion-reading .section-title{padding-bottom:16px;border-bottom:1px solid #dce4eb;margin-bottom:24px}
+.portfolio.companion-reading .case-section>.scope-note{border:0;margin:0 0 20px;padding:0}
+.portfolio.companion-reading .case{min-width:0}
+.portfolio.companion-reading .case-grid.one{grid-template-columns:minmax(0,1fr)}
+.portfolio.companion-reading .resource-button-row.two-resources>a{grid-column:1 / -1}
+.portfolio.companion-reading .resource-button-row>a{white-space:normal;word-break:keep-all;overflow-wrap:normal}
+.portfolio.companion-reading .case-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.portfolio.companion-reading .feature-single{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center}
+.portfolio.companion-reading .feature-single h3{margin-top:0}
+.portfolio.companion-reading .feature-single .featured-poster img{aspect-ratio:auto;height:auto}
+.portfolio.companion-reading .feature-single .featured-poster figcaption{position:static;background:none;color:#5d7284;padding:10px 0 0}
+.portfolio.companion-reading .feature-single .featured-poster{background:none}
+.portfolio.companion-reading .feature-single .featured-body p{margin:0 0 16px}
+.portfolio.companion-reading .featured-footer .feature-title{font-size:16px;font-weight:600;margin:0}
+.portfolio.companion-reading .subsection-title{margin:28px 0 18px}
+.portfolio.companion-reading .evidence-actions{display:grid;gap:8px;margin-top:auto;padding-top:20px}
+.portfolio.companion-reading .evidence-actions .resource-button{display:flex;justify-content:center;text-align:center;padding:10px;background:#f2f7fa;border:1px solid #b8cbd8;border-radius:7px;font-size:14px;font-weight:600;color:#075e73;text-decoration:none}
+.portfolio.companion-reading #automation .case{display:flex;flex-direction:column}
+.portfolio.companion-reading #automation>.scope-note:last-child{margin:20px 0 0}
+.portfolio.companion-reading .resource-group+ .resource-group{margin-top:24px;padding-top:20px;border-top:1px solid #dce4eb}
+.portfolio.companion-reading .resource-group>h3{margin:0 0 16px}
+.portfolio.companion-reading .resource-list h4{font-size:18px;margin:0 0 8px}
+.portfolio.companion-reading .resource-list article{min-width:0}
+.portfolio.companion-reading #overview .overview-facts{grid-template-columns:104px minmax(0,1fr)}
+.portfolio.companion-reading #overview .overview-grid figure>a{align-self:end}
+@media(max-width:1050px){.portfolio.companion-reading #implementation .case-grid.two{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:800px){.portfolio.companion-reading .feature-single,.portfolio.companion-reading .case-grid.two,.portfolio.companion-reading #automation .case-grid{grid-template-columns:minmax(0,1fr)}.portfolio.companion-reading .section-title{padding-bottom:14px;margin-bottom:20px}.portfolio.companion-reading #overview .overview-facts{grid-template-columns:98px minmax(0,1fr)}}

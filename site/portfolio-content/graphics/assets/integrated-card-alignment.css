@@ -1,0 +1,7 @@
+/* Share the summary/highlight tracks across the three desktop project cards. */
+@media (min-width:1001px){
+ body.portfolio.integrated-graphics-review #projects .project-grid{column-gap:20px;row-gap:0}
+ body.portfolio.integrated-graphics-review #projects .project-card{display:grid;grid-row:span 6;grid-template-rows:subgrid;row-gap:0}
+ body.portfolio.integrated-graphics-review #projects .project-card-content{display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:0}
+ body.portfolio.integrated-graphics-review #projects .card-actions{margin-top:0}
+}

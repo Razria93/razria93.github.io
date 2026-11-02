@@ -1,0 +1,19 @@
+/* Review v1: scoped to opted-in Stellar documents. */
+.portfolio.detail.stellar-reading .evidence-profile{margin-top:0}
+.portfolio.detail.stellar-reading .evidence-profile dl{display:grid;grid-template-columns:130px minmax(0,1fr);gap:12px 20px;margin:0}
+.portfolio.detail.stellar-reading .evidence-profile dt{font-weight:700;color:#075e73}
+.portfolio.detail.stellar-reading .evidence-profile dd{margin:0}
+.portfolio.detail.stellar-reading .data-kind{font-size:13px;color:#075e73;margin:0 0 12px;font-weight:700}
+.portfolio.detail.stellar-reading .source-ref{font-size:13px;overflow-wrap:anywhere}
+.portfolio.detail.stellar-reading pre.syntax{font:14px/1.5 Consolas,monospace;white-space:pre;overflow-x:auto;overflow-wrap:normal;tab-size:4;padding:16px 18px;background:#f3f6fa;color:#213547}
+.portfolio.detail.stellar-reading pre.syntax code{font:inherit;white-space:inherit;overflow-wrap:normal;background:transparent}
+.portfolio.detail.stellar-reading .syntax .k,.portfolio.detail.stellar-reading .syntax .kt,.portfolio.detail.stellar-reading .syntax .kd{color:#0056ad;font-weight:600}
+.portfolio.detail.stellar-reading .syntax .nf,.portfolio.detail.stellar-reading .syntax .nc{color:#71409b}
+.portfolio.detail.stellar-reading .syntax .s,.portfolio.detail.stellar-reading .syntax .s1,.portfolio.detail.stellar-reading .syntax .s2,.portfolio.detail.stellar-reading .syntax .cp{color:#934017}
+.portfolio.detail.stellar-reading .syntax .mi,.portfolio.detail.stellar-reading .syntax .mf{color:#875000}
+.portfolio.detail.stellar-reading .syntax .c1,.portfolio.detail.stellar-reading .syntax .cm{color:#496b47;font-style:normal}
+.portfolio.detail.stellar-reading .syntax .n,.portfolio.detail.stellar-reading .syntax .p{color:#213547}
+.portfolio.detail.stellar-reading .code-block{margin:18px 0}.portfolio.detail.stellar-reading .code-block pre{margin:12px 0}
+.portfolio.detail.stellar-reading .tablewrap th,.portfolio.detail.stellar-reading .tablewrap td{vertical-align:top}
+.portfolio.detail.stellar-reading .case-divider th{background:#e8f2f4;color:#075e73}
+@media(max-width:700px){.portfolio.detail.stellar-reading .evidence-profile dl{grid-template-columns:1fr;gap:4px}.portfolio.detail.stellar-reading .evidence-profile dd{margin-bottom:14px}.portfolio.detail.stellar-reading pre.syntax{font-size:13px}.portfolio.detail.stellar-reading .tablewrap{overflow-x:auto}}

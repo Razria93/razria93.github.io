@@ -1,0 +1,51 @@
+/* Shared overview geometry; original assets are contained, never cropped. */
+body.portfolio #overview .overview-grid figure>a{display:flex!important;align-items:center;justify-content:center;aspect-ratio:16/9;width:100%;background:#000;border-radius:5px;overflow:hidden}
+body.portfolio #overview .overview-grid figure img{display:block;width:100%!important;height:100%!important;object-fit:contain!important;aspect-ratio:auto}
+@media(min-width:801px){
+body.portfolio #overview .overview-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 32px;align-items:stretch}
+body.portfolio #overview .overview-summary{display:grid!important;grid-template-rows:auto 1fr auto;gap:18px;min-height:0}
+body.portfolio #overview .overview-intro{margin:0;min-height:56px;line-height:1.75}
+body.portfolio #overview .overview-facts{margin:0!important;grid-template-columns:104px minmax(0,1fr);column-gap:18px;row-gap:12px;align-content:start;align-self:center}
+body.portfolio #overview .equal-actions{margin:0!important;align-self:end}
+body.portfolio #overview .overview-grid figure>a{align-self:end}
+}
+@media(max-width:800px){
+body.portfolio #overview .overview-intro{margin-bottom:0!important}
+body.portfolio #overview .overview-facts{margin:24px 0!important}
+body.portfolio #overview .equal-actions{margin-top:0!important}
+}
+body.portfolio .resource-secondary{margin:12px 0 0;font-size:14px}
+body.portfolio .resource-secondary a{font-weight:700;text-underline-offset:3px}
+body.portfolio .resource-secondary-description{font-size:14px;margin:6px 0 0}
+body.portfolio .learning-category-index{margin:14px 0 20px}
+body.portfolio .learning-category-index article{display:block;min-height:0}
+body.portfolio .learning-category-index h3{margin:0 0 10px}
+body.portfolio .learning-category-index li>a:first-child{min-width:0}
+
+/* Execution entry uses the same title typography as neighboring resources. */
+body.portfolio #resources #project-execution-guide .resource-secondary a{font-size:18px;font-weight:700}
+
+/* Integrated cards share two equal-width actions anchored to the card bottom. */
+body.portfolio #projects .card-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;align-items:stretch;margin-top:auto;padding-top:8px}
+body.portfolio #projects .card-actions a.button{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:100%;min-height:46px;padding:10px 12px;font-size:14px;line-height:1.35;text-align:center;text-decoration:none}
+body.portfolio #projects .card-actions a.button:not(.primary){color:#075e73;background:#f2f7fa;border:1px solid #b8cbd8;border-radius:7px}
+body.portfolio #projects .card-actions a.button:not(.primary):hover{background:#e4f0f5;border-color:#5d8d9d}
+
+/* Graphics learning index: page anchors and compact PDF actions are distinct. */
+body.portfolio .learning-category-index li{display:grid;grid-template-columns:minmax(0,1fr) 168px;gap:12px;align-items:center;box-sizing:border-box;min-height:64px;padding:10px 0}
+body.portfolio .learning-category-index .index-case-link{font-weight:700;line-height:1.5;text-underline-offset:3px}
+body.portfolio .learning-category-index .index-pdf-button{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:168px;height:36px;padding:6px 10px;border:1px solid #b8cbd8;border-radius:7px;background:#f2f7fa;color:#075e73;font-size:13px;font-weight:700;line-height:1.35;white-space:nowrap;text-decoration:none}
+body.portfolio .learning-category-index .index-pdf-button:hover{background:#e4f0f5;border-color:#5d8d9d}
+body.portfolio .learning-category-index .index-pdf-button:focus-visible{outline:3px solid #1976b9;outline-offset:3px}
+@media(max-width:800px){body.portfolio .learning-category-index li{grid-template-columns:minmax(0,1fr);gap:8px;min-height:0;padding:14px 0}body.portfolio .learning-category-index .index-pdf-button{justify-self:start}}
+
+/* Primary actions: read the case locally, or inspect the GitHub source first. */
+body.portfolio #overview .equal-actions a.button:not(.primary){background:#f2f7fa;border-color:#b8cbd8;color:#075e98}
+body.portfolio #overview .equal-actions a.button:not(.primary):hover{background:#e4f0f5}
+
+/* Final review: align only the remaining secondary actions and version label. */
+body.portfolio #combined .actions a.button:not(.primary){background:#f2f7fa;border-color:#b8cbd8}
+body.portfolio #combined .actions a.button:not(.primary):hover{background:#e4f0f5}
+body.portfolio #automation .evidence-actions a.resource-button{min-height:44px;display:flex;align-items:center;justify-content:center}
+body.portfolio #combined .combined-version{margin:16px 0 8px;font-size:14px}
+body.portfolio #combined .combined-version+.actions{margin-top:0}

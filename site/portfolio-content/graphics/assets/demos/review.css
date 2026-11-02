@@ -1,0 +1,9 @@
+/* Review-only video page: shared button treatment, links after evidence. */
+body.demo-review .demo-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;border-top:1px solid #dce4eb;margin-top:24px;padding-top:20px}
+body.demo-review a.resource-button{display:flex;align-items:center;justify-content:center;min-height:46px;padding:10px 14px;text-align:center;box-sizing:border-box;word-break:keep-all;overflow-wrap:normal}
+body.demo-review .report-index .index-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;width:100%}
+body.demo-review .report-index .index-items a{width:100%;justify-content:center}
+body.demo-review video{display:block;width:100%;aspect-ratio:1840/1080;object-fit:contain;margin:18px 0 12px;background:#000}
+body.demo-review p,body.demo-review a{word-break:keep-all;overflow-wrap:normal}
+body.demo-review main>section>h2{margin-top:0}
+@media(max-width:800px){body.demo-review .demo-actions,body.demo-review .report-index .index-items{grid-template-columns:1fr}body.demo-review .demo-actions{margin-top:20px;padding-top:16px}}

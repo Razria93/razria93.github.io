@@ -1,0 +1,105 @@
+{
+  "purpose": "Recorded demonstrations are separate from the original 72 performance runs. No new formal statistics claimed.",
+  "capture_date": "2026-10-30",
+  "source_resolution": [
+    1920,
+    1080
+  ],
+  "output_resolution": [
+    2560,
+    1440
+  ],
+  "fps_note": "Source: requested 60 fps desktop capture, variable presentation times. Output: constant 60 fps.",
+  "audio": "Sources launched with -nosound; output carries silent audio.",
+  "observed_runtime": "160 sight targets, U0 roles 2/158/0, L0/L2 roles 2/6/152; movement, action events and player HP decrease recorded. These are role counts, not simultaneous attack counts.",
+  "segments": [
+    {
+      "name": "roles",
+      "source_id": "roles",
+      "source_start": 0.0,
+      "source_end": 0.0,
+      "mode": "hold",
+      "output_start": 0,
+      "output_end": 10.0,
+      "duration": 10.0
+    },
+    {
+      "name": "participation",
+      "source_id": "participation",
+      "source_start": 1.0,
+      "source_end": 13.0,
+      "mode": "play",
+      "output_start": 10.0,
+      "output_end": 22.0,
+      "duration": 12.0
+    },
+    {
+      "name": "frame_result",
+      "source_id": "frame-chart",
+      "source_start": 0.0,
+      "source_end": 0.0,
+      "mode": "hold",
+      "output_start": 22.0,
+      "output_end": 33.0,
+      "duration": 11.0
+    },
+    {
+      "name": "interval",
+      "source_id": "interval",
+      "source_start": 1.0,
+      "source_end": 11.0,
+      "mode": "play",
+      "output_start": 33.0,
+      "output_end": 43.0,
+      "duration": 10.0
+    },
+    {
+      "name": "calls_result",
+      "source_id": "calls-chart",
+      "source_start": 0.0,
+      "source_end": 0.0,
+      "mode": "hold",
+      "output_start": 43.0,
+      "output_end": 54.0,
+      "duration": 11.0
+    },
+    {
+      "name": "recap_l0",
+      "source_id": "L0",
+      "source_start": 4.0,
+      "source_end": 19.0,
+      "mode": "play",
+      "output_start": 54.0,
+      "output_end": 69.0,
+      "duration": 15.0,
+      "recap": true
+    },
+    {
+      "name": "recap_l2",
+      "source_id": "L2",
+      "source_start": 4.0,
+      "source_end": 19.0,
+      "mode": "play",
+      "output_start": 69.0,
+      "output_end": 84.0,
+      "duration": 15.0,
+      "recap": true
+    },
+    {
+      "name": "summary",
+      "source_id": "L2",
+      "source_start": 15.0,
+      "source_end": 15.0,
+      "mode": "hold",
+      "output_start": 84.0,
+      "output_end": 94.0,
+      "duration": 10.0
+    }
+  ],
+  "limits": [
+    "Three separate condition runs; scene times are not synchronized combat events.",
+    "No new detailed Trace; low-speed crowd movement and mesh overlap remain.",
+    "Original formal data: four sizes, six conditions, three repeats; no recording.",
+    "Capture runtime records span a wider window than the edited clips."
+  ]
+}

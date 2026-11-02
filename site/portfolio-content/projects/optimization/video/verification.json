@@ -1,0 +1,93 @@
+{
+  "file": "stellar-optimization-review-1440p60.mp4",
+  "sha256": "e944515b481f38172621b9a963b3d501f60f91cd20479d62eb85c4061b65e9c3",
+  "frames": 5640,
+  "metadata": {
+    "width": 2560,
+    "height": 1440,
+    "video": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/unknown/unknown, progressive), 2560x1440 [SAR 1:1 DAR 16:9], 4092 kb/s, 60 fps, 60 tbr, 60k tbn (default)",
+    "duration": "00:01:34.00",
+    "fps": 60.0
+  },
+  "full_decode": "passed",
+  "source_hashes": "passed",
+  "segment_checks": [
+    {
+      "scene": "roles",
+      "frame": 5.0,
+      "layout_mean_error": [
+        2.2369165771571784,
+        1.7079509379509379,
+        1.987015306122449,
+        1.1830435065780904
+      ]
+    },
+    {
+      "scene": "participation",
+      "frame": 16.0,
+      "layout_mean_error": [
+        2.238210526315789,
+        1.7015209235209234,
+        1.9851479591836734
+      ]
+    },
+    {
+      "scene": "frame_result",
+      "frame": 27.5,
+      "layout_mean_error": [
+        2.2379992839240956,
+        1.7228253968253968,
+        1.986207482993197,
+        1.1048214227562851
+      ]
+    },
+    {
+      "scene": "interval",
+      "frame": 38.0,
+      "layout_mean_error": [
+        2.296080200501253,
+        1.698064454064454,
+        1.9896267006802721
+      ]
+    },
+    {
+      "scene": "calls_result",
+      "frame": 48.5,
+      "layout_mean_error": [
+        2.290721088435374,
+        1.750972101972102,
+        2.0060858843537415,
+        1.0228470593982024
+      ]
+    },
+    {
+      "scene": "recap_l0",
+      "frame": 61.5,
+      "layout_mean_error": [
+        2.214912996777658,
+        1.454945646945647,
+        2.0055901360544217
+      ]
+    },
+    {
+      "scene": "recap_l2",
+      "frame": 76.5,
+      "layout_mean_error": [
+        2.210621553884712,
+        1.4633722943722944,
+        2.0019608843537413
+      ]
+    },
+    {
+      "scene": "summary",
+      "frame": 89.0,
+      "layout_mean_error": [
+        2.207172932330827,
+        1.775035113035113,
+        2.0087499999999996,
+        1.691561034583822
+      ]
+    }
+  ],
+  "visual_review": "Required: inspect qa frames and watch motion transitions; automated checks cannot judge narrative truth or occlusion."
+}

@@ -1,0 +1,63 @@
+
+/* Scoped additions: approved existing project styles stay intact. */
+.readme-preview header a{color:#85dcd4}
+.synced-category{margin-top:38px;padding-top:26px;border-top:1px solid #d5e0e8;scroll-margin-top:30px}
+.synced-category>h3{font-size:23px;margin:0 0 10px}.synced-category>p{color:#5d7284;margin:0 0 22px}
+.category-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:24px 0}
+.category-nav a{display:block;padding:14px 18px;border:1px solid #c6d9e3;border-radius:7px;background:#f2f8fa;text-decoration:none;font-weight:700}
+.category-nav span{display:block;font-size:13px;color:#5d7284;font-weight:400;margin-top:3px}
+.synced-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.portfolio.graphics-content #implementation .synced-case{display:grid;grid-row:span 6;grid-template-rows:subgrid;row-gap:18px;padding:24px;min-width:0}
+.synced-case>.anchor-alias{display:none}.synced-case>h4{font-size:20px;line-height:1.5;margin:0;align-self:start}
+.synced-case figure{margin:0;min-width:0}.synced-media{min-width:0}.synced-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;background:#f2f6f8;border-radius:6px;padding:8px}
+.synced-images.count-1{grid-template-columns:1fr}.synced-images img{display:block;width:100%;height:190px;object-fit:contain;border-radius:2px}
+.synced-images figcaption{font-size:12px;line-height:1.6;color:#5d7284;margin-top:6px}
+.media-caption{font-size:13px!important;line-height:1.65!important;color:#5d7284;margin:8px 0 0!important}
+.synced-description p{margin:0}.synced-flow{list-style:none;padding:0!important;margin:0!important;display:grid;grid-template-columns:1fr 1fr;gap:10px;counter-reset:flow}
+.synced-flow li{padding:9px 12px;background:#edf7f9;border:1px solid #b8d2df;border-radius:6px;line-height:1.7;font-size:14px;margin:0!important;counter-increment:flow}
+.synced-flow li:before{content:counter(flow) '  ';font-weight:700;color:#00738b;white-space:pre}
+.synced-conditions{align-self:start;background:#eff4f7;border-radius:6px;padding:12px 14px;font-size:14px;line-height:1.8}
+.synced-conditions summary{cursor:pointer;color:#075e78;font-weight:700}.synced-conditions p:last-child{margin-bottom:0}.problem-conditions{margin-top:24px}
+.synced-actions{display:grid;grid-template-rows:44px 1fr;gap:8px;align-self:stretch}.synced-actions a{text-align:center;display:flex;align-items:center;justify-content:center;min-height:44px;box-sizing:border-box;padding:9px 12px;text-decoration:none;background:#f2f7fa;border:1px solid #b4ccdc;border-radius:6px;font-size:14px}.demo-links{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:8px}
+.synced-case{scroll-margin-top:20px}.synced-case:target{outline:2px solid #087696;outline-offset:3px}
+.integrated-priority{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}.integrated-priority a{padding:12px 16px;border:1px solid #b8d2df;border-radius:6px;background:#edf7f9;font-weight:700}
+.integrated-categories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.integrated-categories article{padding:22px;border:1px solid #d4e0e8;border-radius:8px;background:white}.integrated-categories h3{font-size:19px;margin:0 0 10px}.integrated-categories p{font-size:14px;color:#5d7284}.integrated-categories ul{list-style:none;padding:0;margin:0}.integrated-categories li{display:flex;justify-content:space-between;gap:14px;border-top:1px solid #e0e7ec;padding:10px 0;font-size:14px}.index-pdf{white-space:nowrap;font-size:13px}
+.markdown-body{max-width:1120px;margin:24px auto;padding:30px;background:white;border:1px solid #dce4eb;border-radius:12px}.markdown-body h2{margin-top:40px;padding-bottom:12px;border-bottom:1px solid #dce4eb}.markdown-body h3{margin-top:30px}.markdown-body img{max-width:100%;max-height:420px;object-fit:contain;display:block;margin:14px auto}.markdown-body details{border:1px solid #dce4eb;padding:14px 18px;border-radius:6px;margin:12px 0}.markdown-body summary{cursor:pointer;color:#075e98;font-weight:bold}.markdown-body table{width:100%;font-size:14px}.markdown-body pre{overflow:auto}.markdown-body td{min-width:110px}
+@media(max-width:800px){.synced-grid,.category-nav,.integrated-categories{grid-template-columns:1fr}.portfolio.graphics-content #implementation .synced-case{grid-row:auto;grid-template-rows:auto;padding:20px}.synced-images img{height:150px}.markdown-body{padding:18px}.markdown-body table{display:block;overflow:auto}.integrated-categories li{flex-wrap:wrap}.category-nav a{font-size:14px}}
+
+
+/* Reader-facing navigation and button emphasis */
+.portfolio.graphics-content .button,
+.portfolio.graphics-content .resource-button,
+.portfolio.graphics-content .resource-button-row>a.resource-button,
+.portfolio.graphics-content .resource-button-row>a.resource-button:first-child,
+.portfolio.graphics-content main #automation a.resource-button,
+.portfolio.graphics-content #implementation .synced-actions .resource-button{font-weight:700}
+.part-range-list{display:grid;grid-template-columns:80px minmax(0,1fr);column-gap:20px;row-gap:0;margin:18px 0 22px}
+.part-range-list dt,.part-range-list dd{margin:0;padding:12px 0;border-bottom:1px solid #dce4eb;line-height:1.8}
+.part-range-list dt{font-weight:700;color:#075e73}
+.part-range-list dt:last-of-type,.part-range-list dd:last-of-type{border-bottom:0}
+@media(max-width:600px){.part-range-list{grid-template-columns:60px minmax(0,1fr);column-gap:12px}}
+
+.category-nav-label{margin:24px 0 0;font-weight:700;color:#5d7284}
+.category-nav-label+.category-nav{margin-top:12px;margin-bottom:20px}
+.synced-actions.category-guide-actions{grid-template-rows:auto;margin:0 0 28px}
+
+/* v15: each case retains its own reading flow and image captions. */
+.portfolio.graphics-content #implementation .synced-grid{align-items:start}
+.portfolio.graphics-content #implementation .synced-case{display:flex;flex-direction:column;grid-row:auto;gap:18px;align-self:start}
+.portfolio.graphics-content #implementation .synced-actions{display:flex;flex-direction:column;align-self:stretch;gap:8px;margin-top:2px}
+.portfolio.graphics-content #implementation .synced-actions .demo-links{display:flex;flex-wrap:wrap;gap:8px}
+.portfolio.graphics-content #implementation .synced-actions .demo-links>a{flex:1 1 180px}
+.portfolio.graphics-content #implementation .synced-images figcaption strong{display:block;color:#244759;font-size:13px}
+.portfolio.graphics-content #implementation .synced-images figcaption span{display:block;margin-top:3px}
+.portfolio.graphics-content #implementation .synced-images{align-items:start}
+.portfolio.graphics-content #implementation .synced-images img{height:auto;max-height:260px;object-fit:contain}
+.portfolio.graphics-content #implementation .synced-conditions{align-self:stretch}
+.portfolio.graphics-content #implementation .synced-images img.full-source-image{height:auto;max-height:520px;object-fit:contain}
+.portfolio.graphics-content #implementation .synced-scope{font-size:13px;color:#5d7284;margin-top:10px;line-height:1.7}
+.portfolio.graphics-content #implementation .related-case-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.portfolio.graphics-content #implementation .related-case-links a{display:block;border:1px solid #b4ccdc;border-radius:5px;padding:7px 10px;background:#f2f7fa;font-weight:700}
+.portfolio.graphics-content #implementation .related-example{border-top:1px solid #cbdce5;padding-top:12px;margin-top:16px}
+.portfolio.graphics-content #implementation .related-example h5{font-size:14px;margin:0 0 10px;color:#075e78}
+.portfolio.graphics-content #implementation .related-example .resource-button{min-height:44px;display:flex;align-items:center;justify-content:center;padding:8px 12px;border:1px solid #b4ccdc;border-radius:5px;background:#f2f7fa;font-weight:700;text-align:center}

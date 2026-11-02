@@ -1,0 +1,11 @@
+/* Shared review-only button appearance. Preserve each page's grid and button sizing. */
+body.portfolio.bundle-standard a.button,
+body.portfolio.bundle-standard a.resource-button{font-weight:700!important}
+body.portfolio.bundle-standard a.resource-button{
+ font-family:"Malgun Gothic",sans-serif;font-size:14px!important;font-weight:700!important;
+ color:#075e73!important;background:#f2f7fa!important;
+ border:1px solid #b8cbd8!important;border-radius:7px!important;line-height:1.35!important;
+ text-decoration:none;box-sizing:border-box;text-align:center;
+}
+body.portfolio.bundle-standard a.resource-button:hover{background:#e4f0f5!important;border-color:#5d8d9d!important;text-decoration:none}
+body.portfolio.bundle-standard a.resource-button:focus-visible{outline:3px solid #1976b9;outline-offset:3px}

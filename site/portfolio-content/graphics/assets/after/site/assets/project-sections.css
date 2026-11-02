@@ -1,0 +1,12 @@
+/* Applies only to the three project guides in this review. */
+.portfolio .report-index .index-items{grid-template-columns:repeat(5,minmax(0,1fr))}
+.portfolio .anchor-alias{display:block;height:0;overflow:hidden}
+.portfolio .case-section .section-title{padding-bottom:16px;border-bottom:1px solid #dce4eb;margin-bottom:24px}
+.portfolio .case-links>a:first-child{display:inline-flex;align-items:center;min-height:44px;padding:9px 13px;border:1px solid #b8cbd8;border-radius:7px;background:#f2f7fa;color:#075e73;font-weight:700;text-decoration:none}
+.portfolio .case-links>a:first-child:hover{background:#e4f0f5;text-decoration:underline}
+.portfolio .case-links{gap:12px 18px}
+.portfolio .case-links a{max-width:100%}
+.portfolio .case-section .case{padding:24px}
+.portfolio .case-section .case-scope{line-height:1.8}
+@media(max-width:1000px){.portfolio .report-index .index-items{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:800px){.portfolio .report-index .index-items{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio .case-section .case{padding:20px}.portfolio .case-section .section-title{padding-bottom:14px;margin-bottom:20px}.portfolio .case-links{flex-direction:column;align-items:flex-start}}

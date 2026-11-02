@@ -1,0 +1,101 @@
+[
+  {
+    "condition": "U0",
+    "capture": "C:\\Users\\starb\\Documents\\Codex\\ovideo-20261030\\U0-v1\\capture.mp4",
+    "sha256": "6d129a4064ab0c8d4c048499bd655dd949675c98c3c683a21980a7c4adb82bb5",
+    "source_resolution": [
+      1920,
+      1080
+    ],
+    "requested_capture_fps": 60,
+    "native_game_fps_not_claimed": true,
+    "measurement_complete": true,
+    "roles": [
+      [
+        2,
+        158,
+        0
+      ]
+    ],
+    "minimum_sight": 160,
+    "hp_range": [
+      4630,
+      4940
+    ],
+    "max_moving_count": 97,
+    "action_event_count": 478,
+    "runtime_capsule_radii": [
+      10
+    ],
+    "interpretation": "New recorded demonstration; not used to recalculate the original 72-run performance statistics.",
+    "decoded_frames": 1872,
+    "adjacent_exact_repeats_at_160x90": 0,
+    "requested_minus_encoded_frames": 48
+  },
+  {
+    "condition": "L0",
+    "capture": "C:\\Users\\starb\\Documents\\Codex\\ovideo-20261030\\L0-v1\\capture.mp4",
+    "sha256": "05c70933503eb6f6ad0bb16e74f28fef358af9213024e0327eb785168586e506",
+    "source_resolution": [
+      1920,
+      1080
+    ],
+    "requested_capture_fps": 60,
+    "native_game_fps_not_claimed": true,
+    "measurement_complete": true,
+    "roles": [
+      [
+        2,
+        6,
+        0
+      ]
+    ],
+    "minimum_sight": 160,
+    "hp_range": [
+      4630,
+      4940
+    ],
+    "max_moving_count": 6,
+    "action_event_count": 474,
+    "runtime_capsule_radii": [
+      10
+    ],
+    "interpretation": "New recorded demonstration; not used to recalculate the original 72-run performance statistics.",
+    "decoded_frames": 1865,
+    "adjacent_exact_repeats_at_160x90": 0,
+    "requested_minus_encoded_frames": 55
+  },
+  {
+    "condition": "L2",
+    "capture": "C:\\Users\\starb\\Documents\\Codex\\ovideo-20261030\\L2-v1\\capture.mp4",
+    "sha256": "1fd9f0e85fb145d7203844c8a3f1a33cb5e3660a6a1a69430d687f0ad7f62b0c",
+    "source_resolution": [
+      1920,
+      1080
+    ],
+    "requested_capture_fps": 60,
+    "native_game_fps_not_claimed": true,
+    "measurement_complete": true,
+    "roles": [
+      [
+        2,
+        6,
+        0
+      ]
+    ],
+    "minimum_sight": 160,
+    "hp_range": [
+      4640,
+      4940
+    ],
+    "max_moving_count": 6,
+    "action_event_count": 472,
+    "runtime_capsule_radii": [
+      10
+    ],
+    "interpretation": "New recorded demonstration; not used to recalculate the original 72-run performance statistics.",
+    "decoded_frames": 1865,
+    "adjacent_exact_repeats_at_160x90": 0,
+    "requested_minus_encoded_frames": 55
+  }
+]

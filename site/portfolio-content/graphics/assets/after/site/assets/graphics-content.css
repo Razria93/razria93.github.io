@@ -1,0 +1,34 @@
+/* Approved graphics content layout; scoped to graphics only. */
+.portfolio.graphics-content .report-index a[href="#automation"]{white-space:nowrap}
+.portfolio.graphics-content .implementation-flow{list-style:none;counter-reset:step;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:20px 0;padding:0}
+.portfolio.graphics-content .implementation-flow li{counter-increment:step;display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #b8cbd8;background:#edf7f8;color:#075e73;border-radius:7px;font-size:14px;line-height:1.6;word-break:keep-all}
+.portfolio.graphics-content .implementation-flow li:before{content:counter(step);font-weight:700;flex:none}
+.portfolio.graphics-content .implementation-scope{margin:0 0 20px;color:#5d7284;font-size:14px;line-height:1.8}
+.portfolio.graphics-content .implementation-scope summary{cursor:pointer;color:#075e73;padding:8px 0}
+.portfolio.graphics-content .implementation-scope p{font-size:14px;margin:10px 0}
+.portfolio.graphics-content .principle-intro{margin-top:18px}
+.portfolio.graphics-content .supporting-demo{margin:0 0 20px;font-size:14px}
+.portfolio.integrated-graphics-review .project-card img[src*="graphics-cover-2x2"]{height:auto;aspect-ratio:16/9;object-fit:contain;background:#051019}
+/* Each pair shares title, image, description, diagram, conditions, and action rows. */
+.portfolio.graphics-content #implementation>.part-learning-grid{row-gap:20px}
+.portfolio.graphics-content #implementation>.part-learning-grid>.case{display:grid;grid-row:span 6;grid-template-rows:subgrid;row-gap:20px;align-items:start}
+.portfolio.graphics-content #implementation>.part-learning-grid>.case>h3,
+.portfolio.graphics-content #implementation>.part-learning-grid>.case>.implementation-flow,
+.portfolio.graphics-content #implementation>.part-learning-grid>.case>.implementation-scope,
+.portfolio.graphics-content #implementation>.part-learning-grid>.case>.part-scope-region,
+.portfolio.graphics-content #implementation>.part-learning-grid>.case>.resource-button-row{margin:0;padding-top:0}
+.portfolio.graphics-content #implementation .part-scope-region>details{margin:0}
+.portfolio.graphics-content #implementation .part-scope-region>details+details{margin-top:12px}
+.portfolio.graphics-content #implementation .part-description>p{margin:0}
+.portfolio.graphics-content #implementation .part-description>p+p{margin-top:14px}
+.portfolio.graphics-content #implementation>.part-learning-grid .implementation-flow{align-self:stretch;align-content:start;grid-auto-rows:1fr}
+.portfolio.graphics-content #implementation>.part-learning-grid .implementation-flow>li{margin:0}
+.portfolio.graphics-content #implementation>.part-learning-grid .resource-button-row{align-self:end}
+.portfolio.graphics-content #implementation .learning-figure{margin:0;min-width:0;align-self:stretch}
+.portfolio.graphics-content #implementation .learning-image-stage{display:grid;grid-template-columns:minmax(0,1fr);aspect-ratio:16/9;background:#0c1720;border-radius:7px;overflow:hidden}
+.portfolio.graphics-content #implementation .learning-image-stage.comparison-images{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.portfolio.graphics-content #implementation .learning-image-stage img{display:block;width:100%;height:100%;min-height:0;min-width:0;object-fit:contain;align-self:center}
+.portfolio.graphics-content #implementation .learning-figure figcaption{margin:8px 0 0;font-size:13px;line-height:1.7;color:#5d7284;word-break:keep-all}
+.portfolio.graphics-content #implementation .learning-provenance{margin:0 0 24px;font-size:14px;color:#5d7284}
+.portfolio.graphics-content #implementation .featured-footer{margin-top:28px;padding-top:20px;border-top:1px solid #dce4eb}
+@media(max-width:1050px){.portfolio.graphics-content #implementation>.part-learning-grid>.case{grid-row:auto;grid-template-rows:auto;row-gap:18px}}
