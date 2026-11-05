@@ -1,0 +1,30 @@
+{
+  "updated": "2026-11-05",
+  "version": "20261105-pdf-web-v1",
+  "documents": [
+    {
+      "document": "combined",
+      "pages": 86,
+      "sha256": "f04f7771b6ae2a076d137c4f8b6495283515e87a6fbd3d4d7c82df7608049a50",
+      "url": "https://razria93.github.io/files/pdf/combined-review.pdf"
+    },
+    {
+      "document": "stellar",
+      "pages": 26,
+      "sha256": "8341f54121540ca2e25640aa2989a9424a0020ee495970b96e302cbca217fb84",
+      "url": "https://razria93.github.io/files/pdf/stellar-review.pdf"
+    },
+    {
+      "document": "plugin",
+      "pages": 23,
+      "sha256": "13f4e159c1c352d2e395b55653c3a7af5e3ce47d0266bfddb52aee888dca9969",
+      "url": "https://razria93.github.io/files/pdf/plugin-review.pdf"
+    },
+    {
+      "document": "graphics",
+      "pages": 35,
+      "sha256": "813e9eb2dd3b80eb5d3ed331c241886d21ccf050c6e057a949f3ffb1f00c112a",
+      "url": "https://razria93.github.io/files/pdf/graphics-review.pdf"
+    }
+  ]
+}
