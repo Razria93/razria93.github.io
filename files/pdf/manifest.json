@@ -1,17 +1,17 @@
 {
   "updated": "2026-11-24",
-  "version": "20261124-cooprpg-19p",
+  "version": "20261124-stellar-boss-108p",
   "documents": [
     {
       "document": "combined",
-      "pages": 106,
-      "sha256": "b820c69a7c4d954aba363b73e73bd8135389f247c6e2ecee094b461572038444",
+      "pages": 108,
+      "sha256": "6fecb7e8b491b222684cef3324cf6d98b6c2d012ad84c9027220aa2bf85840e2",
       "url": "https://razria93.github.io/files/pdf/combined-review.pdf"
     },
     {
       "document": "stellar",
-      "pages": 26,
-      "sha256": "8341f54121540ca2e25640aa2989a9424a0020ee495970b96e302cbca217fb84",
+      "pages": 28,
+      "sha256": "95657a44189d67c9f447190f273cf4d7d70a7f56ec7a5f450307748cbc1feb55",
       "url": "https://razria93.github.io/files/pdf/stellar-review.pdf"
     },
     {
