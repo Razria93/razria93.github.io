@@ -1,0 +1,10 @@
+.proof{scroll-margin-top:5rem}.proof p,#workflow li{max-width:75ch}.proof figure{margin:1rem 0}
+.proof img,.proof video{display:block;max-width:100%;height:auto}.proof video{width:100%;background:#142b37}
+.proof figcaption,.proof caption{font-size:.9rem;color:#425e6c;line-height:1.55;text-align:left;padding:.5rem 0}
+.proof table{width:100%;border-collapse:collapse}.proof th,.proof td{padding:.65rem;border-bottom:1px solid #c4d6df;text-align:left}.proof thead{background:#eaf2f6}
+.evidence-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}
+.chapters{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1rem 0}.chapters a[aria-current=true]{font-weight:bold;text-decoration:underline}
+details{margin:1.1rem 0}details summary{cursor:pointer;color:#195d78;font-weight:650}blockquote{border-left:3px solid #28759a;padding:.4rem 1rem;margin:1rem 0}
+@media(max-width:650px){.evidence-photos{grid-template-columns:1fr}.proof th,.proof td{padding:.4rem;font-size:.91rem}.proof{min-width:0}}
+
+#network-cases article{scroll-margin-top:6rem}#network-cases details img{aspect-ratio:auto;object-fit:contain}#case-selection dd{max-width:78ch}

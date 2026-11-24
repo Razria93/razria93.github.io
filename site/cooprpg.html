@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="CoopRPG 2인 협동 액션 RPG · GAS와 데디케이트 서버 · AI 협업 · 11월 24일 두 PC 원정"><title>CoopRPG · 염동섭</title><link rel="stylesheet" href="coop-res/assets/document.css"><link rel="stylesheet" href="coop-res/assets/site.css"><link rel="stylesheet" href="coop-res/assets/coop.css"><link rel="stylesheet" href="coop-res/assets/case-evidence.css"><link rel="stylesheet" href="coop-res/assets/coop-project.css"></head><body class="portfolio coop"><a class="skip" href="#main">본문으로 이동</a><div class="topbar"><nav aria-label="프로젝트 이동"><a class="brand" href="index.html">전체 포트폴리오</a><div class="project-nav"><a href="https://razria93.github.io/site/stellar.html">스텔라</a><a href="cooprpg.html" aria-current="page" class="current">CoopRPG</a><a href="https://razria93.github.io/site/plugin.html">플러그인</a><a href="https://razria93.github.io/site/graphics.html">그래픽스</a></div></nav></div>
+
+
+
+<header><p class="eyebrow report-meta">게임플레이 · 2인 협동 · Unreal Engine 5.8.4 · GAS · 데디케이트 서버</p>
+
+
+
+<h1 class="report-title">CoopRPG</h1>
+
+
+
+<p class="report-intro">둘이 숲의 전투와 퍼즐을 통과하고 흑기사를 격파한 뒤, 얻은 장비를 지닌 채 로비로 돌아오는 협동 액션 RPG입니다.</p>
+
+
+
+<div class="actions"><a class="button primary" href="#play">실제 플레이 보기 ↓</a><a class="button" href="../files/pdf/cooprpg-review.pdf">포트폴리오 PDF · 19쪽 ↗</a><a class="button" href="https://github.com/Razria93/CoopRPG">GitHub 저장소 ↗</a></div></header>
+
+
+
+<nav class="report-index" aria-label="이 페이지에서 보기"><strong>이 페이지에서 보기</strong><a href="#overview">프로젝트 개요</a><a href="#roles">작업 범위·기여</a><a href="#play">플레이 시연</a><a href="#milestones">MVP 개발</a><a href="#architecture">전투·서버 구현</a><a href="#workflow">AI 협업</a><a href="#cases">문제 해결</a><a href="#validation">두 PC 검증</a><a href="#sources">PDF·자료</a></nav><main id="main">
+
+
+
+<section id="overview"><h2 class="section-title">프로젝트 개요</h2><div class="opening"><figure class="scene"><a href="coop-res/media/overview.jpg"><img src="coop-res/media/overview.jpg" alt="11월 24일 두 PC 원정 · 노트북 2P가 흑기사를 도발하는 장면" loading="lazy"></a><figcaption>11월 24일 두 PC 원정 · 노트북 2P가 흑기사를 도발하는 장면</figcaption></figure><div><p>처음 사용하는 GAS와 데디케이트 서버 환경에서, 처음부터 AI와 역할을 나눠 기획·구현·검증을 거쳐 플레이 가능한 원정을 완성하고자 시작했습니다.</p><dl><dt>개발 형태</dt><dd>개인 프로젝트 · Codex와 협업</dd><dt>개발 기간</dt><dd>2026.10.29 기획 시작 · 11.24 3차 MVP 두 PC 완주 확인</dd><dt>개발 환경</dt><dd>Unreal Engine 5.8.4 소스 빌드 · C++ · GAS · 데디케이트 서버</dd></dl></div></div></section><section id="roles"><h2 class="section-title">작업 범위·기여</h2><div class="columns twocol"><div class="role-card"><h3>내가 맡은 일</h3><p>원정을 세 스테이지로 구성하고 MVP 범위, 실패 시 재도전, 장비 이월 규칙을 정했습니다. 숲 레벨에 캐릭터와 에셋을 배치하고 애니메이션을 설정했습니다.</p><p>AI 협업 규칙과 테스트 기준을 작성하고 산출물을 검토했습니다. 마지막에는 데스크톱과 노트북에서 직접 플레이하며 보상과 귀환을 확인했습니다.</p></div><div class="role-card"><h3>Codex가 맡은 일</h3><p>요구사항을 바탕으로 설계 대안을 제시하고 GAS 전투, 서버 판정, 상태 복제와 HUD를 구현했습니다.</p><p>반복 시험을 구성하고 서버와 두 클라이언트의 로그를 대조했습니다. 제가 수동 플레이에서 발견한 문제를 수정하고 같은 조건에서 결과를 다시 확인했습니다.</p></div></div></section><section id="play"><h2 class="section-title">두 PC에서 플레이한 2인 원정</h2><figure>
+
+
+
+<video controls playsinline preload="metadata" poster="coop-res/media/expedition-boss.jpg" aria-label="CoopRPG 실물 두 PC 플레이 영상" src="coop-res/media/CoopRPG-Expedition-Playthrough.mp4"><a href="coop-res/media/CoopRPG-Expedition-Playthrough.mp4">MP4 열기</a></video>
+
+
+
+<figcaption class="source-note">2026.11.24 · 데스크톱에서 데디케이트 서버와 1P, 노트북에서 2P를 실행했습니다. 같은 회차의 두 화면을 사용한 2분 30초 무음 자막 편집본입니다.</figcaption></figure>
+
+
+
+<nav class="chapters" aria-label="원정 영상 구간"><a href="coop-res/media/CoopRPG-Expedition-Playthrough.mp4#t=0" data-seek="0">0:00 직업 선택</a><a href="coop-res/media/CoopRPG-Expedition-Playthrough.mp4#t=16" data-seek="16">0:16 숲 보급</a><a href="coop-res/media/CoopRPG-Expedition-Playthrough.mp4#t=50" data-seek="50">0:50 쌍둥이 발판</a><a href="coop-res/media/CoopRPG-Expedition-Playthrough.mp4#t=83" data-seek="83">1:23 방어·측면 협공</a><a href="coop-res/media/CoopRPG-Expedition-Playthrough.mp4#t=108" data-seek="108">1:48 공동 귀환</a><a href="coop-res/media/CoopRPG-Expedition-Playthrough.mp4#t=136" data-seek="136">2:16 공유 창고</a></nav><div class="stage-grid"><figure class="scene"><a href="coop-res/media/stage1.jpg"><img src="coop-res/media/stage1.jpg" alt="버섯 네 마리를 처치해 팀 마법석을 얻고, 둘이 포탈에서 3초간 대기합니다." loading="lazy"></a><figcaption>버섯 네 마리를 처치해 팀 마법석을 얻고, 둘이 포탈에서 3초간 대기합니다.</figcaption></figure><figure class="scene"><a href="coop-res/media/stage2.jpg"><img src="coop-res/media/stage2.jpg" alt="각자 다른 발판을 밟고, 통과한 뒤 보상 카드를 한 장씩 고릅니다." loading="lazy"></a><figcaption>각자 다른 발판을 밟고, 통과한 뒤 보상 카드를 한 장씩 고릅니다.</figcaption></figure><figure class="scene"><a href="coop-res/media/stage3.jpg"><img src="coop-res/media/stage3.jpg" alt="흑기사를 격파하고 상자에서 보상을 챙긴 뒤 함께 귀환합니다." loading="lazy"></a><figcaption>흑기사를 격파하고 상자에서 보상을 챙긴 뒤 함께 귀환합니다.</figcaption></figure></div></section>
+
+
+
+<section id="milestones"><h2 class="section-title">한 판에서 원정과 귀환까지</h2><div class="columns">
+
+
+
+<div class="panel"><h3>1차 · 기본 한 판</h3><p>11.16 로컬 서버와 두 창에서 전리품, 공동 탈출, 성공·1점, 다음 맵 재준비를 확인했습니다.</p></div>
+
+
+
+<div class="panel"><h3>2차 · 실물 두 PC</h3><p>11.21 로비에서 출발해 버섯 군락, 공동 포탈, 두 발판, 흑기사 결전을 통과했습니다. 두 PC에서 완주 2회와 양쪽 1점을 확인했습니다.</p><p><a href="https://github.com/Razria93/CoopRPG/tree/5b9e93d7318d8cfaef5d1e84c86bf39d44bc51b3">2차 검증 소스</a></p></div>
+
+
+
+<div class="panel"><h3>3차 · 보상과 로비 귀환</h3><p>11.24 두 PC에서 재도전과 준비 중 재접속을 거쳐 원정을 마쳤습니다. 보스 보상, 공동 귀환, 양쪽 1점·각 30골드, 개인 검 유지, 귀환 뒤 상점과 공유 창고를 확인했습니다.</p><p class="source-note">검증 패키지 expedition-2pc-20261124 · 소스 5654393 및 로컬 변경</p></div></div></section>
+
+
+
+<section id="architecture"><h2 class="section-title">전투 시스템 비교와 서버 구현</h2>
+
+
+
+<div class="twoshots"><figure class="scene"><a href="coop-res/media/stellar-guard.jpg"><img src="coop-res/media/stellar-guard.jpg" alt="Project Stellar · 검으로 공격을 막을 때의 피격 반응" loading="lazy"></a><figcaption>Project Stellar · 검으로 공격을 막을 때의 피격 반응</figcaption></figure><figure class="scene"><a href="coop-res/media/coop-guard.jpg"><img src="coop-res/media/coop-guard.jpg" alt="CoopRPG · 수호 스크롤 사용 뒤 방패로 막은 버섯 공격의 피해 4" loading="lazy"></a><figcaption>CoopRPG · 수호 스크롤 사용 뒤 방패로 막은 버섯 공격의 피해 4</figcaption></figure></div><div class="columns twocol"><div class="panel"><h3>Project Stellar</h3><p>공격자가 자체 피해 이벤트에 요청 피해량과 적중 정보를 담습니다. 피격자 쪽 코드가 가드를 판정하고, 자체 체력 컴포넌트에서 확정 피해를 반영합니다.</p><p><a href="https://razria93.github.io/site/stellar.html">스텔라 상세</a></p></div>
+
+
+
+<div class="panel"><h3>CoopRPG</h3><p>서버가 방패 방향과 수호로 피해량을 정합니다. 효과 사양에 그 피해를 담아 대상 ASC에 적용하면 GAS가 체력 속성(Health)을 갱신합니다.</p><p>같은 정면 공격을 막는 통제 시험에서 수호 스크롤 사용 전 피해 5, 사용 후 피해 4를 확인했습니다. 11.24 두 PC 원정에서도 스크롤을 쓴 2P가 버섯 공격을 막아 피해 4를 받았습니다.</p></div></div>
+
+
+
+<p class="evidence-links"><a href="../files/pdf/cooprpg-review.pdf#page=7">7쪽 · 두 프로젝트의 실제 가드 장면 →</a><a href="../files/pdf/cooprpg-review.pdf#page=8">8쪽 · 피해 처리 구조와 GAS →</a></p><p><a href="https://github.com/Razria93/CoopRPG/blob/5b9e93d7318d8cfaef5d1e84c86bf39d44bc51b3/Docs/Architecture.md">2차 판본의 아키텍처</a></p><article><h3>기본 공격의 서버 판정과 복제 범위</h3><p>클라이언트가 기본 공격을 요청하면 데디케이트 서버가 비용과 적중을 확정합니다. 고정 표적 시험에서 표적 HP 100→90은 양쪽 클라이언트에, 공격자의 스태미나 100→90은 소유 클라이언트에 반영됐습니다.</p><p><a href="../files/pdf/cooprpg-review.pdf#page=9">입력·GAS 처리·속성별 복제 조건 · PDF 9쪽</a></p></article><details><summary>공용 상자의 마지막 물약을 서버에서 한 번만 지급하는 방법</summary><p>두 클라이언트는 같은 상자의 마지막 물약을 15ms 간격으로 요청했습니다. 둘 다 품절 표시를 받기 전이었습니다. 서버는 A에게 한 번 지급해 재고를 1에서 0으로 바꾼 뒤 B를 품절로 거절했습니다. 두 화면에서 공용 재고는 0개, 개인 가방은 A 1개·B 0개였습니다. 11월 23일 같은 PC의 데디케이트 서버·두 클라이언트 자동 입력 회차 Race-002809에서 확인했습니다.</p><p><a href="../files/pdf/cooprpg-review.pdf#page=10">서버 판정과 두 가방의 결과 · PDF 10쪽 →</a></p></details></section>
+
+
+
+<section id="workflow"><h2 class="section-title">AI와 일을 나눈 방법</h2>
+
+
+
+<ol><li><strong>사람이 계획합니다.</strong> 만들 게임 규칙, 범위, 플레이 완료 조건을 정합니다. AGENTS.md와 작업 프롬프트로 코드 관례와 역할을 공유합니다.</li>
+
+
+
+<li><strong>Codex가 구현합니다.</strong> 작업을 코드와 반복 검사로 만들고, 실행 조건·원본 로그·실패 결과를 남깁니다. 반복되는 계획·기능 문서 정리에 스킬을 적용합니다.</li>
+
+
+
+<li><strong>함께 검증합니다.</strong> 사람은 화면과 조작을 보고, Codex는 판정·복제·비용을 로그와 대조합니다. 의견이 갈리면 코드와 원본을 열어 기준을 다시 확인합니다.</li></ol>
+
+
+
+<article class="proof"><h3>보급 장비의 지급 규칙을 정하고 AI에 구현을 맡겼습니다</h3><blockquote>“직업별 보급 장비를 첫 스테이지에서 한 번 지급하고 원정 종료 시 회수되게 해줘.”</blockquote><p>제가 재도전 중 중복 지급 검사와 서버·A·B의 원본 기록을 요청했습니다. Codex가 대여 장비와 개인 장비를 구분해 구현하고 반복 시험을 구성했습니다. 11월 23일 같은 PC에서 제가 두 클라이언트를 조작했고, Codex가 같은 수동 회차의 기록을 대조했습니다. 시간 초과와 사망 재도전에서 추가 지급 0건, 보스 처치 후 보급 장비는 각자 한 번 회수됐습니다. 개인 귀속 검은 로비에 남았습니다.</p><p><a href="../files/pdf/cooprpg-review.pdf#page=11">실제 작업 요청 · PDF 11쪽 →</a></p></article><p><a href="https://github.com/Razria93/CoopRPG/blob/5b9e93d7318d8cfaef5d1e84c86bf39d44bc51b3/AGENTS.md">작업 지침</a> · <a href="https://github.com/Razria93/CoopRPG/blob/5b9e93d7318d8cfaef5d1e84c86bf39d44bc51b3/Docs/Planning/WorkingGuide.md">작업 판단 가이드</a></p><details><summary>취소 입력 한 건의 서버 기록 읽기</summary><p>11월 16일 수동 회차에서 A의 공격 비용이 11:24:58.068에 확정됐고, 서버는 11:24:58.468에 취소를 처리했습니다. 승인된 10건은 모두 <code>Damage=0 Committed=1</code>이었습니다. 활성 공격이 없어 무시된 나머지 3건은 <code>NoActiveAttack</code>으로 기록됐습니다.</p><p><a href="coop-res/tools/index.html">검증 도구 화면 확대 →</a></p><figure><a href="coop-res/media/cancel-call.png"><img style="width:100%;height:auto" loading="lazy" src="coop-res/media/cancel-call.png" alt="클라이언트 B의 취소 호출 원본 행 확대"></a><figcaption>클라이언트 B의 취소 호출 · B의 원본 대조 화면</figcaption></figure><figure><a href="coop-res/media/cancel-server.png"><img style="width:100%;height:auto" loading="lazy" src="coop-res/media/cancel-server.png" alt="서버 수신과 취소 승인 원본 행 확대"></a><figcaption>서버 수신과 취소 승인 · B의 원본 대조 화면</figcaption></figure></details><article id="retry"><h3>실패한 구간에서 재도전하도록 AI와 진행 규칙을 고쳤습니다</h3><p>지원자가 직접 플레이해 실패·0점 뒤 다음 맵으로 이동하는 동작을 확인했습니다. 같은 구간 재도전을 결정하고, Codex가 서버 이동·라운드 초기화를 수정했습니다. 수동 회차에서 시간 초과와 사망 후 같은 맵 재시작을 확인했습니다.</p><p><a href="https://github.com/Razria93/CoopRPG/blob/5b9e93d7318d8cfaef5d1e84c86bf39d44bc51b3/Docs/Validation/ForestExpedition.md#forest-round-retry-user">검증 기록</a></p><p><a href="../files/pdf/cooprpg-review.pdf#page=12">플레이에서 발견한 문제와 AI 수정 · PDF 12쪽 →</a></p></article>
+
+
+
+<article id="validation-tools"><h3>AI와 함께 검증할 실행기와 전투 로그 뷰어를 기획했습니다</h3><p>AI와 함께 접속 상태와 전투 판정을 확인하려고 두 도구를 기획했습니다. 실행기에는 원격 참가자를 표시하고, 뷰어에서는 취소 호출·서버 수신·비용·피해를 구분하도록 제가 기준을 정했습니다. Codex가 두 도구를 구현했습니다.</p><p>제가 두 클라이언트를 조작하고 Codex가 같은 회차의 서버·A·B 로그를 대조했습니다. 취소 요청 13건 중 10건은 피해 전에 취소됐고, 3건은 취소할 활성 공격이 없었습니다. 실행기 화면과 로그 뷰어 화면은 서로 다른 회차입니다.</p><p><a href="../files/pdf/cooprpg-review.pdf#page=13">검증 도구와 취소 판정 · PDF 13쪽 →</a></p></article></section>
+
+
+
+<section id="cases"><h2 class="section-title">문제 해결과 검증</h2>
+
+
+
+<article class="proof" id="case-selection"><h3>세 사례를 고른 이유</h3>
+<dl><dt><a href="#seat-case">구조 설계 · 좌석이 바뀐 참가자</a></dt><dd>접속에는 성공했지만 장비가 사라졌습니다. 원래 자리를 다른 사람이 쓰는 경우를 제시해, 어디에 앉았든 같은 참가자의 장비를 되찾도록 복원 기준을 정했습니다.</dd>
+<dt><a href="#potion-case">데이터 오류 · 가득 찬 가방</a></dt><dd>물약 수량이 정수 상한에 닿는 경우를 시험해 달라고 요청했습니다. 정상 지급과 지급 거절 모두에서 받는 사람과 지급처의 수량을 함께 봤습니다.</dd>
+<dt><a href="#latency-case">성능 최적화 · 흑기사의 반격</a></dt><dd>도끼가 지나간 뒤 체력이 줄어드는 장면을 짚었습니다. 같은 반격의 영상과 서버 로그를 맞춘 뒤 두 PC에서 실행 옵션을 바꿔 지연을 비교했습니다.</dd></dl><p><a href="../files/pdf/cooprpg-review.pdf#page=14">사례 선정 이유 · PDF 14쪽 →</a></p></article><article id="seat-case" class="proof"><h3>구조 설계 · 좌석이 바뀌어도 참가자의 장비를 복원했습니다</h3><p>서버가 좌석을 30초간 예약했습니다. 예약이 만료된 뒤 입장하면 개인 물약과 대여 장비가 사라졌습니다. Codex가 원래 자리가 비어 있을 때 복원하자고 제안했습니다. 저는 다른 사람이 그 자리를 쓰는 경우를 제시했고, 같은 원정의 접속 ID로 참가자의 상태를 복원하기로 했습니다.</p><div class="evidence-photos"><figure><img loading="lazy" src="coop-res/media/seat-before.jpg" alt="수정 전 · P2 복귀, 개인 물약 0개"><figcaption>수정 전 · P2 복귀, 개인 물약 0개</figcaption></figure><figure><img loading="lazy" src="coop-res/media/seat-after.jpg" alt="수정 후 · 같은 P2, 개인 물약 1개"><figcaption>수정 후 · 같은 P2, 개인 물약 1개</figcaption></figure><figure><img loading="lazy" src="coop-res/media/seat-other.jpg" alt="별도 교체 시험 · B가 P1에서 개인 물약 복원"><figcaption>별도 교체 시험 · B가 P1에서 개인 물약 복원</figcaption></figure></div><details><summary>4인 설계 반례와 실제 시험 환경</summary><img loading="lazy" src="coop-res/media/seat-design.png" alt="4인 확장을 가정해 B가 P4로 돌아오는 경우를 설명한 설계 도식"><p>실행은 같은 PC에서 최대 두 명을 순차 교체했습니다. P2 도착 비교는 예약 후 36.338초와 36.383초였습니다. 독립 Win64 패키지의 별도 회차에서는 같은 클라이언트가 44.148초에 재접속해 상태를 복원했습니다.</p></details><p><a href="../files/pdf/cooprpg-review.pdf#page=15">같은 좌석과 다른 좌석에서 확인한 복원 결과 · PDF 15쪽 →</a></p></article><article class="proof" id="potion-case"><h3>데이터 오류 · 지급 전 상한 검사로 가방 수량과 재고를 보존했습니다</h3><p>수량 상한에서의 동작을 제가 확인해 달라고 요청했습니다. 수정 전 상자와 적 드롭은 지급을 승인했고, 가방 수량은 2,147,483,647에서 −2,147,483,648로 바뀌었습니다. Codex가 서버의 상한 검사를 지급처 상태 변경 앞으로 옮겼습니다.</p>
+<table><caption>수정 작업 트리 · 로컬 에디터 · 서버와 수령자 값 일치</caption><thead><tr><th>지급처</th><th>상한 직전</th><th>상한 도달</th></tr></thead><tbody><tr><th>공용 상자</th><td>지급 1, 재고 0</td><td>거절, 재고 1 유지</td></tr><tr><th>적 드롭</th><td>지급 1, 획득 처리</td><td>거절, 미획득 유지</td></tr></tbody></table><details><summary>상한값에서 서버가 남긴 거절 기록</summary><p>상자 회차의 서버 로그 2121행과 적 드롭 회차의 4324행에서 거절 사유 <code>BagLimit</code>을 확인했습니다. 두 회차 모두 지급은 0건이고, 가방 수량은 상한에 머물렀습니다. 이 시험은 경계값을 직접 설정했습니다.</p></details><p><a href="../files/pdf/cooprpg-review.pdf#page=16">가방·지급처 네 조건 · PDF 16쪽 →</a></p></article><article class="proof" id="latency-case"><h3>성능 최적화 · 서버의 강제 로그 쓰기를 끄자 반격 지연이 줄었습니다</h3><p>제가 지목한 12번 반격에서 P2 체력은 도끼가 지나간 순간 50이었고 뒤이어 40이 됐습니다. Codex가 반격 번호로 화면과 로그를 맞춘 결과, 데스크톱 A에서 타격 자세부터 서버 피해 확정까지 797ms, 그 뒤 HP 갱신까지 29ms였습니다.</p><figure><video id="counter-video" controls playsinline preload="none" poster="coop-res/media/boss-hp50.jpg" aria-label="흑기사 반격 증상 원속도 영상" src="coop-res/media/counter12-two-pc.mp4"></video><figcaption>최초 발견 회차 · 흑기사 12번 반격 · 원속도·무음. 병렬본은 HP가 처음 줄어든 프레임에 두 화면을 맞췄습니다.</figcaption></figure><nav class="chapters" aria-label="흑기사 시점 선택"><a href="coop-res/media/counter12-two-pc.mp4" data-angle="two-pc">두 화면 비교</a><a href="coop-res/media/counter12-B.mp4" data-angle="B">노트북 B</a><a href="coop-res/media/counter12-A.mp4" data-angle="A">데스크톱 A</a></nav>
+<h4>별도 두 PC 시험에서 바뀐 시간</h4><p>제가 노트북을 조작하고 Codex가 두 회차를 대조했습니다. 같은 패키지·맵·PC 역할에서 반디캠을 끄고 서버의 <code>-forcelogflush</code>만 켜거나 껐습니다.</p><table><caption>피해 확정 반격 각 7회 · 타격 자세에서 체력 갱신까지 최대 간격</caption><thead><tr><th>시점</th><th>강제 로그 쓰기 켬</th><th>끔</th></tr></thead><tbody><tr><th>데스크톱 A</th><td>322ms</td><td>28ms</td></tr><tr><th>노트북 B</th><td>259ms</td><td>25ms</td></tr></tbody></table><details><summary>히트스탑·섬광·노트북 끊김은 어떻게 구분했나</summary><p>피해 확정 평타에는 공격자의 자세를 60ms 멈추는 연출이 있었습니다. 별도의 측면 적중에서는 보스 HP가 줄고 약 0.6초 뒤 섬광이 보였습니다. 그 적중의 처리·복제·표시 지연은 개별 측정되지 않았습니다.</p><p>노트북 최대 프레임 시간은 녹화 켬 약 69초에서 166.2ms, 끔 90초에서 17.2ms였습니다. 네트워크와 A의 렌더링 조건도 달랐습니다. 최초 14번 반격의 모션 반복은 후속 켬·끔 양쪽에서 재현되지 않아 해결 여부가 남았습니다.</p><a href="coop-res/media/counter12-original.png">최초 양쪽 화면 확대</a></details><p><a href="../files/pdf/cooprpg-review.pdf#page=17">반격 12번과 후속 두 PC 측정 · PDF 17쪽 →</a></p></article><article id="network-cases" class="proof"><h3>추가 네트워크 사례</h3><p>참가자가 떠난 뒤 서버가 자리를 비우는 시점과, 공격자에게 쿨다운 상태가 전달되는 경로를 각각 확인했습니다.</p><p><a href="../files/pdf/cooprpg-review.pdf#page=18">P2 종료와 쿨다운 복제 · PDF 18쪽 →</a></p><article id="disconnect"><h4>노트북 B 종료 후 P2가 남은 문제</h4><p>다른 PC에서 B를 닫았을 때 호스트에 참가 슬롯이 남았습니다. 정상 종료를 서버에 전달하고 유예 후 종료하도록 바꿨습니다. 서버가 종료 신호를 받은 뒤 슬롯 갱신까지 한 회차에서 84ms를 관측했습니다. 강제 종료의 60초는 당시 두 PC에서 본 별도 타임아웃입니다.</p><p><a href="https://github.com/Razria93/CoopRPG/blob/5b9e93d7318d8cfaef5d1e84c86bf39d44bc51b3/Docs/Validation/LanBaseline.md#validation-launcher-client-lifecycle">종료·중복 접속 검증</a></p><details><summary>기존 상세 화면과 검증 기록 펼치기</summary><figure><a href="coop-res/media/disconnect-details.png"><img src="coop-res/media/disconnect-details.png" loading="lazy" alt="P2 종료 전후의 두 PC 화면과 서버가 슬롯을 해제한 시점"></a><figcaption>P2 종료 전후의 두 PC 화면과 서버가 슬롯을 해제한 시점 · 이미지를 선택하면 원본 크기로 볼 수 있습니다.</figcaption></figure></details></article>
+
+
+
+<article id="cooldown"><h4>공격자에게 쿨다운 상태가 누락된 문제</h4><p>서버는 쿨다운 2초 중 재요청을 거절했지만 일반 입력이 서버까지 전송됐습니다. Codex가 플레이어 ASC 상태의 소유자 전달을 조사하고 Minimal에서 Mixed로 바꿨습니다. 일반 입력 차단, 서버 거절, 두 플레이어의 독립 쿨다운을 다시 확인했습니다.</p><p><a href="https://github.com/Razria93/CoopRPG/blob/5b9e93d7318d8cfaef5d1e84c86bf39d44bc51b3/Docs/Validation/Index.md#v02-cost-cooldown">초기 GAS 쿨다운 시험</a></p><details><summary>기존 상세 화면과 검증 기록 펼치기</summary><figure><a href="coop-res/media/cooldown-details.png"><img src="coop-res/media/cooldown-details.png" loading="lazy" alt="소유자의 일반 입력 차단과 서버의 강제 요청 거절을 나눠 확인한 기록"></a><figcaption>소유자의 일반 입력 차단과 서버의 강제 요청 거절을 나눠 확인한 기록 · 이미지를 선택하면 원본 크기로 볼 수 있습니다.</figcaption></figure></details></article>
+
+
+
+</article></section>
+
+
+
+<section id="validation"><h2 class="section-title">실물 두 PC에서 확인한 원정 결과</h2><p>11월 24일 같은 Win64 Development 패키지로 데스크톱에서 데디케이트 서버와 클라이언트 A, 노트북에서 클라이언트 B를 실행했습니다.</p><div class="twoshots"><figure class="scene"><a href="coop-res/media/result-a.jpg"><img src="coop-res/media/result-a.jpg" alt="A · 데스크톱에서 확인한 원정 완료 1점" loading="lazy"></a><figcaption>A · 데스크톱에서 확인한 원정 완료 1점</figcaption></figure><figure class="scene"><a href="coop-res/media/result-b.jpg"><img src="coop-res/media/result-b.jpg" alt="B · 노트북에서 확인한 같은 원정 완료 1점" loading="lazy"></a><figcaption>B · 노트북에서 확인한 같은 원정 완료 1점</figcaption></figure></div><ul class="facts"><li>버섯 군락에서 사망한 뒤 같은 스테이지에서 재도전했습니다. 퍼즐 준비 중 재접속한 B는 같은 P2 슬롯으로 돌아왔습니다.</li><li>흑기사 보상 상자를 연 뒤 두 사람이 귀환 포탈에서 3.030초간 머물렀습니다.</li><li>로비에서 각자 30골드와 개인 검이 유지됐고, 귀환 후 상점 거래를 확인했습니다.</li></ul><p class="source-note">검증 패키지 expedition-2pc-20261124 · 소스 5654393 및 로컬 변경 포함</p><p><a href="../files/pdf/cooprpg-review.pdf#page=19">검증 환경과 회차 결과 · PDF 19쪽</a></p></section><section id="sources"><h2 class="section-title">PDF·자료</h2><ul><li><a href="../files/pdf/cooprpg-review.pdf">CoopRPG 포트폴리오 PDF</a></li><li><a href="coop-res/media/CoopRPG-Expedition-Playthrough.mp4">11.24 두 PC 원정 MP4</a></li><li><a href="../files/pdf/combined-review.pdf#page=30">통합 PDF에서 CoopRPG 보기 · 30–48쪽</a></li><li><a href="https://github.com/Razria93/CoopRPG/blob/5b9e93d7318d8cfaef5d1e84c86bf39d44bc51b3/Docs/Validation/ForestExpedition.md">2차 소스의 숲 원정 검증</a></li><li><a href="https://github.com/Razria93/CoopRPG#readme">CoopRPG README</a></li></ul></section></main>
+
+
+
+<footer><a href="index.html">전체 포트폴리오로 돌아가기 ↑</a></footer><script src="coop-res/assets/case-media.js" defer></script><script defer src="/site/assets/unified-return.js"></script></body></html>

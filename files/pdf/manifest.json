@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-05",
-  "version": "20261105-pdf-web-v1",
+  "updated": "2026-11-24",
+  "version": "20261124-cooprpg-19p",
   "documents": [
     {
       "document": "combined",
-      "pages": 86,
-      "sha256": "f04f7771b6ae2a076d137c4f8b6495283515e87a6fbd3d4d7c82df7608049a50",
+      "pages": 106,
+      "sha256": "b820c69a7c4d954aba363b73e73bd8135389f247c6e2ecee094b461572038444",
       "url": "https://razria93.github.io/files/pdf/combined-review.pdf"
     },
     {
@@ -25,6 +25,12 @@
       "pages": 35,
       "sha256": "813e9eb2dd3b80eb5d3ed331c241886d21ccf050c6e057a949f3ffb1f00c112a",
       "url": "https://razria93.github.io/files/pdf/graphics-review.pdf"
+    },
+    {
+      "document": "cooprpg",
+      "url": "https://razria93.github.io/files/pdf/cooprpg-review.pdf",
+      "pages": 19,
+      "sha256": "917c2bb6da9aa296e4a193af2eb9b03668a7ebc38520c1a5c820d5a84212ed50"
     }
   ]
 }

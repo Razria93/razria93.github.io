@@ -1,0 +1,23 @@
+/* CoopRPG uses the shared project header, index and section layout. */
+.coop .topbar nav,.coop footer{padding-inline:clamp(16px,4vw,42px)}
+.coop header .report-intro{max-width:65ch}
+.coop .report-index{max-width:1100px;margin:24px auto 0;padding:18px 26px;background:white;border:1px solid #c9d9e2;border-radius:8px;display:flex;flex-wrap:wrap;align-items:center;gap:9px 17px}
+.coop .report-index strong{color:#183844;margin-right:4px}
+.coop .report-index a{color:#075c74;text-decoration:underline;text-underline-offset:4px;background:transparent;padding:4px 0}
+.coop .opening{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center;gap:clamp(18px,3vw,40px)}
+.coop .opening figure,.coop .scene{margin:0}
+.coop .opening p{margin:.4rem 0 1rem}
+.coop .opening dt,.coop .role-card h3{color:#086174}
+.coop figure figcaption{color:#435f71;font-size:.9rem;margin-top:.35rem}
+.coop .stage-grid,.coop .twoshots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0}
+.coop .twoshots{grid-template-columns:repeat(2,minmax(0,1fr))}
+.coop .scene img,.coop .opening img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+.coop .role-card{border-top:3px solid #197681;padding:0 15px 5px;background:#f3f7f8}
+.coop .role-card p{margin:.4rem 0 .9rem}
+.coop article.proof{margin:2.1rem 0 0}
+.coop .facts{padding-left:1.25em}
+.coop .facts li{margin:.4em 0}
+.coop .actions,.coop .chapters{align-items:center}
+.coop .chapters{padding:0}
+.coop a:focus-visible,.coop button:focus-visible{outline-offset:3px}
+@media(max-width:740px){.coop .report-index{margin:14px 16px 0;padding:14px;gap:5px 16px}.coop .topbar nav{display:flex;flex-wrap:wrap;gap:4px 14px;padding-block:9px}.coop .project-nav{gap:4px 13px}.coop .stage-grid,.coop .opening,.coop .twoshots{grid-template-columns:1fr}.coop header .actions{gap:.45rem}.coop section{margin:1rem 0}.coop .chapters a{word-break:keep-all}.coop .report-index strong{width:100%}}
