@@ -1,13 +1,13 @@
 {
   "updated": "2026-11-28",
-  "version": "20261128-contribution-language",
+  "version": "20261128-waystone-edition-alignment",
   "documents": [
     {
       "document": "combined",
       "pages": 108,
-      "sha256": "7e414e385de73b0d21eeb39502a00e413a105636b5e620885132b6e4d1a205e1",
+      "sha256": "eba30473236a1bf2044bf88ada3a5a39b6f7b9bcc45286d2e9b58c575dd65398",
       "url": "https://razria93.github.io/files/pdf/combined-review.pdf",
-      "version": "20261128-contribution-language"
+      "version": "20261128-waystone-edition-alignment"
     },
     {
       "document": "stellar",
@@ -34,8 +34,8 @@
       "document": "cooprpg",
       "url": "https://razria93.github.io/files/pdf/cooprpg-review.pdf",
       "pages": 19,
-      "sha256": "ed1790575ae80a44e8b322878c51889bb2f82a84150ce2c0c484841301f1bd02",
-      "version": "20261128-contribution-language"
+      "sha256": "5a212bf7fde50b28960dd3cf87291fc060c4d3fb5bbf7af4d1d8d48fa9d9938e",
+      "version": "20261128-waystone-edition-alignment"
     }
   ]
 }
