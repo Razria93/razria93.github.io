@@ -1,12 +1,13 @@
 {
-  "updated": "2026-11-25",
-  "version": "20261124-stellar-boss-108p",
+  "updated": "2026-11-28",
+  "version": "20261128-waystone-playback-links",
   "documents": [
     {
       "document": "combined",
       "pages": 108,
-      "sha256": "5b8bda50dc27c4299ed075cd5d127089303821bf604dd9152885eb3c7d758a80",
-      "url": "https://razria93.github.io/files/pdf/combined-review.pdf"
+      "sha256": "aa86d2e1998a60882dda8eba369212a38ffe5ddf005b42ea14bde3cf6da3c76f",
+      "url": "https://razria93.github.io/files/pdf/combined-review.pdf",
+      "version": "20261128-waystone-playback-links"
     },
     {
       "document": "stellar",
@@ -30,7 +31,8 @@
       "document": "cooprpg",
       "url": "https://razria93.github.io/files/pdf/cooprpg-review.pdf",
       "pages": 19,
-      "sha256": "fefbd3181bacdb3c69846b3b973d235457403b46c7507c75717d7f9244e9dc6d"
+      "sha256": "7ff62d0b340dacbaac3aec523a9dc9fb10732f2d04189d8574c209265d17d1f4",
+      "version": "20261128-waystone-playback-links"
     }
   ]
 }
