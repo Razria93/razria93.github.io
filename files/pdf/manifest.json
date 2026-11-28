@@ -1,13 +1,13 @@
 {
   "updated": "2026-11-28",
-  "version": "20261128-waystone-guard-rules",
+  "version": "20261128-waystone-stellar-transition",
   "documents": [
     {
       "document": "combined",
       "pages": 108,
-      "sha256": "d97b60b11e39773964b7f9286a266c44028bfe5841a3dde640e99b41849700c9",
+      "sha256": "af2d6eead00a1d7f3ce0836b021235c1d0e753a4d163c42fed92a41ad3d7566a",
       "url": "https://razria93.github.io/files/pdf/combined-review.pdf",
-      "version": "20261128-waystone-guard-rules"
+      "version": "20261128-waystone-stellar-transition"
     },
     {
       "document": "stellar",
@@ -34,8 +34,8 @@
       "document": "cooprpg",
       "url": "https://razria93.github.io/files/pdf/cooprpg-review.pdf",
       "pages": 19,
-      "sha256": "a218a3125ffd685332553944d9e1c14fe614951b7866dc4648d311458e553012",
-      "version": "20261128-waystone-guard-rules"
+      "sha256": "d9cd2b10da71fdb44dce8bdf1c8e4bbe85e9ca5951c397d25ec73937b9b18d74",
+      "version": "20261128-waystone-stellar-transition"
     }
   ]
 }
