@@ -1,13 +1,13 @@
 {
   "updated": "2026-11-28",
-  "version": "20261128-waystone-edition-alignment",
+  "version": "20261128-waystone-guard-rules",
   "documents": [
     {
       "document": "combined",
       "pages": 108,
-      "sha256": "eba30473236a1bf2044bf88ada3a5a39b6f7b9bcc45286d2e9b58c575dd65398",
+      "sha256": "d97b60b11e39773964b7f9286a266c44028bfe5841a3dde640e99b41849700c9",
       "url": "https://razria93.github.io/files/pdf/combined-review.pdf",
-      "version": "20261128-waystone-edition-alignment"
+      "version": "20261128-waystone-guard-rules"
     },
     {
       "document": "stellar",
@@ -34,8 +34,8 @@
       "document": "cooprpg",
       "url": "https://razria93.github.io/files/pdf/cooprpg-review.pdf",
       "pages": 19,
-      "sha256": "5a212bf7fde50b28960dd3cf87291fc060c4d3fb5bbf7af4d1d8d48fa9d9938e",
-      "version": "20261128-waystone-edition-alignment"
+      "sha256": "a218a3125ffd685332553944d9e1c14fe614951b7866dc4648d311458e553012",
+      "version": "20261128-waystone-guard-rules"
     }
   ]
 }
